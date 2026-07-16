@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Karigar</title>
+<meta name="description" content="Get in touch with the Karigar team." />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__brand"><span>K</span>karigar</a>
+  <div class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="artisans.html">Artisans</a>
+    <a href="story.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="shop.html" class="nav__cta">Bag · 0</a>
+  <button class="nav__burger">☰</button>
+</nav>
+
+<main>
+  <section class="contact">
+    <div class="contact__left">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Say hello</span>
+        <h1 style="margin-top:20px">Write to <em>us</em>.<br/>We write back.</h1>
+        <p>Whether you're a maker who'd like to join the collective, a customer with a question, or a journalist looking for a story — we read every message.</p>
+      </div>
+
+      <div class="contact__info">
+        <div><small>Email</small><p>hello@karigar.co</p></div>
+        <div><small>Studio</small><p>Bandra West, Mumbai</p></div>
+        <div><small>Hours</small><p>Mon–Fri · 10 – 6 IST</p></div>
+      </div>
+    </div>
+
+    <div class="contact__form">
+      <span class="eyebrow">Get in touch</span>
+      <h2 style="margin-top:14px">Tell us what's on your mind.</h2>
+      <p>We reply within one working day. Promise.</p>
+
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="field"><label>Your name</label><input type="text" required placeholder="Amara Diallo" /></div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@studio.com" /></div>
+        </div>
+        <div class="field">
+          <label>I am a…</label>
+          <select>
+            <option>A curious customer</option>
+            <option>An artisan applying to join</option>
+            <option>Press or media</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label>Your message</label><textarea required placeholder="Say hello…"></textarea></div>
+        <button type="submit">Send message →</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="toast">Thanks — we'll write back within a day ✦</div>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div><h4>Made slowly.<br/>Sent with care.</h4></div>
+    <div><h5>Shop</h5><ul><li>Ceramics</li><li>Textiles</li></ul></div>
+    <div><h5>About</h5><ul><li>Our story</li><li>Artisans</li></ul></div>
+    <div><h5>Help</h5><ul><li>Shipping</li><li>Contact</li></ul></div>
+  </div>
+  <div class="footer__bottom"><span>© 2025 Karigar Collective</span><span>Handmade website</span></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
