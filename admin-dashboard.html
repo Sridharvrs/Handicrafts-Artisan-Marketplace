@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Artisan Dashboard — Stackly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<button class="menu-toggle" id="menuToggle">
+    ☰
+</button>
+
+<div class="workshop">
+
+  <aside class="loom">
+
+    <!-- Close Button -->
+    <button class="close-sidebar" id="closeSidebar">
+        ✕
+    </button>
+
+    <div class="loom-top">
+      <a href="user-dashboard.html">
+        <img src="assets/images/logo.webp"
+             alt="Stackly"
+             class="sidebar-logo">
+    </a>
+    
+</div>
+
+    <nav class="loom-nav">
+        <a class="active" data-view="overview"><span>01</span> Overview</a>
+        <a data-view="orders"><span>02</span> Orders <em class="badge">7</em></a>
+        <a data-view="inventory"><span>03</span> Inventory</a>
+        <a data-view="story"><span>04</span> Story</a>
+        <a data-view="earnings"><span>05</span> Earnings</a>
+        <a data-view="workshop"><span>06</span> Workshop</a>
+    </nav>
+
+    <div class="loom-bot">
+        <div class="me">
+            <div class="me-ring">
+                <div class="me-face">SK</div>
+            </div>
+
+            <p>Sufiyan Khatri</p>
+            <small>Indigo Ajrakh · Kachchh</small>
+        </div>
+
+        <a href="index.html" class="swap">
+            ⇌ Logout
+        </a>
+    </div>
+
+</aside>
+
+  <main class="canvas">
+
+    <div class="topbar">
+      <div>
+        <p class="date">Friday · 17 July 2026 · Kutch, 34°C</p>
+        <h1>Salaam, Sufiyan. <span>The vats are ready.</span></h1>
+      </div>
+      <div class="quick">
+        <button class="pill-btn ghost">＋ New product</button>
+        <button class="pill-btn solid">Go live 🔴</button>
+      </div>
+    </div>
+
+    <!-- ═════ VIEW: OVERVIEW ═════ -->
+    <section class="aview on" data-panel="overview">
+      <div class="stat-row">
+        <div class="stat"><p class="lbl">This week's earnings</p><p class="big">₹ 48,620</p><p class="delta up">▲ 18% vs last week</p><svg class="spark" viewBox="0 0 120 40"><polyline points="0,30 15,28 30,22 45,25 60,18 75,20 90,10 105,14 120,6" fill="none" stroke="#e8b04a" stroke-width="2"/></svg></div>
+        <div class="stat"><p class="lbl">Pending orders</p><p class="big">7 <em>pieces</em></p><p class="delta">3 dyeing · 2 drying · 2 packing</p><div class="bar"><span style="width:42%;background:#4a6fa5"></span><span style="width:28%;background:#c9a26b"></span><span style="width:30%;background:#8a4a2b"></span></div></div>
+        <div class="stat"><p class="lbl">Studio rating</p><p class="big">4.92 <em>★</em></p><p class="delta">from 234 buyers</p><div class="stars">★★★★★</div></div>
+        <div class="stat dark"><p class="lbl">Next payout</p><p class="big">₹ 62,400</p><p class="delta">Releases in 3 days</p><a href="#" class="chip-link" data-jump="earnings">Payout schedule →</a></div>
+      </div>
+
+      <div class="split">
+        <div class="panel orders-panel">
+          <div class="p-head"><h2>Order queue</h2><a class="ghost-link" data-jump="orders">open orders module →</a></div>
+          <table class="orders">
+            <thead><tr><th>#</th><th>Piece</th><th>Buyer</th><th>Stage</th><th>Due</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><code>KG-2810</code></td><td><div class="pc"><span class="sw" style="background:#1e3a5f"></span> Ajrakh stole — 9 dips</div></td><td>Ananya M.</td><td><span class="tag dye">dyeing</span></td><td>18 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+              <tr><td><code>KG-2809</code></td><td><div class="pc"><span class="sw" style="background:#a83a2b"></span> Madder red dupatta</div></td><td>Rohan D.</td><td><span class="tag dry">drying</span></td><td>19 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+              <tr><td><code>KG-2807</code></td><td><div class="pc"><span class="sw" style="background:#2a4a3a"></span> Ajrakh yardage (3m)</div></td><td>Studio Kaia</td><td><span class="tag pack">packing</span></td><td>20 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel inv-panel">
+          <div class="p-head"><h2>Inventory pulse</h2><a class="ghost-link" data-jump="inventory">manage →</a></div>
+          <div class="inv-list">
+            <div class="inv-row"><div class="inv-name"><span class="sw big" style="background:#1e3a5f"></span><div><p>Ajrakh stole — indigo</p><small>SKU · AJK-001</small></div></div><div class="inv-meter"><div class="fill" style="width:82%"></div></div><p class="inv-count">14 <small>/ 18</small></p></div>
+            <div class="inv-row"><div class="inv-name"><span class="sw big" style="background:#a83a2b"></span><div><p>Madder red dupatta</p><small>SKU · AJK-004</small></div></div><div class="inv-meter"><div class="fill low" style="width:22%"></div></div><p class="inv-count low">3 <small>/ 14</small></p></div>
+            <div class="inv-row"><div class="inv-name"><span class="sw big" style="background:#2a4a3a"></span><div><p>Ajrakh yardage 3m</p><small>SKU · AJK-008</small></div></div><div class="inv-meter"><div class="fill" style="width:60%"></div></div><p class="inv-count">9 <small>/ 15</small></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════ VIEW: ORDERS ═════ -->
+    <section class="aview" data-panel="orders">
+      <div class="a-page-head">
+        <div><p class="a-eyebrow">Module · 02</p><h2 class="a-title">Order queue</h2><p class="a-sub">7 pieces in the workshop right now — indigo pots to packing bench.</p></div>
+        <div class="a-metrics"><div><b>3</b><small>dyeing</small></div><div><b>2</b><small>drying</small></div><div><b>2</b><small>packing</small></div><div class="mm"><b>₹ 62,400</b><small>queue value</small></div></div>
+      </div>
+
+      <div class="a-filter"><span class="aftab on">Active (7)</span><span class="aftab">Ready (2)</span><span class="aftab">Shipped (18)</span><span class="aftab">Cancelled</span></div>
+
+      <div class="panel orders-panel full">
+        <table class="orders">
+          <thead><tr><th>#</th><th>Piece</th><th>Buyer</th><th>Stage</th><th>Due</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><code>KG-2810</code></td><td><div class="pc"><span class="sw" style="background:#1e3a5f"></span> Ajrakh stole — 9 dips</div></td><td>Ananya M.</td><td><span class="tag dye">dyeing</span></td><td>18 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            <tr><td><code>KG-2809</code></td><td><div class="pc"><span class="sw" style="background:#a83a2b"></span> Madder red dupatta</div></td><td>Rohan D.</td><td><span class="tag dry">drying</span></td><td>19 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            <tr><td><code>KG-2807</code></td><td><div class="pc"><span class="sw" style="background:#2a4a3a"></span> Ajrakh yardage (3m)</div></td><td>Studio Kaia</td><td><span class="tag pack">packing</span></td><td>20 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            <tr><td><code>KG-2803</code></td><td><div class="pc"><span class="sw" style="background:#5b3a1e"></span> Kaatha block set</div></td><td>Priya V.</td><td><span class="tag dye">dyeing</span></td><td>22 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            <tr><td><code>KG-2799</code></td><td><div class="pc"><span class="sw" style="background:#c9a26b"></span> Natural cotton stole</div></td><td>Meera S.</td><td><span class="tag dry">drying</span></td><td>23 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            <tr><td><code>KG-2795</code></td><td><div class="pc"><span class="sw" style="background:#1e3a5f"></span> Indigo yardage 6m</div></td><td>Ateliér Om</td><td><span class="tag dye">dyeing</span></td><td>24 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+            <tr><td><code>KG-2791</code></td><td><div class="pc"><span class="sw" style="background:#5b3a1e"></span> Wooden block re-carve</div></td><td>Self stock</td><td><span class="tag pack">packing</span></td><td>25 Jul</td><td><button class="mini">Update ↗</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ═════ VIEW: INVENTORY ═════ -->
+    <section class="aview" data-panel="inventory">
+      <div class="a-page-head">
+        <div><p class="a-eyebrow">Module · 03</p><h2 class="a-title">Inventory</h2><p class="a-sub">Every piece on your shelves. Low-stock flagged in madder red.</p></div>
+        <div class="a-metrics"><div><b>43</b><small>total pieces</small></div><div><b>2</b><small>low stock</small></div><div><b>5</b><small>SKUs</small></div><div class="mm"><b>₹ 1,84,200</b><small>shelf value</small></div></div>
+      </div>
+
+      <div class="inv-cards">
+        <div class="ic"><div class="ic-top" style="background:#1e3a5f"></div><div class="ic-body"><b>Ajrakh stole — indigo</b><small>AJK-001 · ₹ 3,850</small><div class="inv-meter"><div class="fill" style="width:82%"></div></div><p class="ic-count">14 / 18 in stock</p><div class="ic-act"><button class="mini">＋ Add</button><button class="mini ghost">Edit</button></div></div></div>
+        <div class="ic"><div class="ic-top" style="background:#a83a2b"></div><div class="ic-body"><b>Madder red dupatta</b><small>AJK-004 · ₹ 2,900</small><div class="inv-meter"><div class="fill low" style="width:22%"></div></div><p class="ic-count low">⚠ 3 / 14 — restock soon</p><div class="ic-act"><button class="mini">＋ Add</button><button class="mini ghost">Edit</button></div></div></div>
+        <div class="ic"><div class="ic-top" style="background:#2a4a3a"></div><div class="ic-body"><b>Ajrakh yardage 3m</b><small>AJK-008 · ₹ 4,200</small><div class="inv-meter"><div class="fill" style="width:60%"></div></div><p class="ic-count">9 / 15 in stock</p><div class="ic-act"><button class="mini">＋ Add</button><button class="mini ghost">Edit</button></div></div></div>
+        <div class="ic"><div class="ic-top" style="background:#c9a26b"></div><div class="ic-body"><b>Natural cotton stole</b><small>AJK-012 · ₹ 1,600</small><div class="inv-meter"><div class="fill mid" style="width:45%"></div></div><p class="ic-count">6 / 14 in stock</p><div class="ic-act"><button class="mini">＋ Add</button><button class="mini ghost">Edit</button></div></div></div>
+        <div class="ic"><div class="ic-top" style="background:#5b3a1e"></div><div class="ic-body"><b>Block-print scarf set</b><small>AJK-020 · ₹ 5,400</small><div class="inv-meter"><div class="fill" style="width:70%"></div></div><p class="ic-count">11 / 16 in stock</p><div class="ic-act"><button class="mini">＋ Add</button><button class="mini ghost">Edit</button></div></div></div>
+        <div class="ic add"><span>＋</span><b>Add new product</b><small>Upload photos, set MRP, describe the craft.</small></div>
+      </div>
+    </section>
+
+    <!-- ═════ VIEW: STORY ═════ -->
+    <section class="aview" data-panel="story">
+      <div class="a-page-head">
+        <div><p class="a-eyebrow">Module · 04</p><h2 class="a-title">Your maker story</h2><p class="a-sub">Buyers who read your story buy 3.4× more. Keep it warm.</p></div>
+        <div class="story-reach">
+          <div class="ring">
+            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(245,239,227,.15)" stroke-width="10"/><circle cx="60" cy="60" r="52" fill="none" stroke="#e8b04a" stroke-width="10" stroke-dasharray="326" stroke-dashoffset="70" stroke-linecap="round" transform="rotate(-90 60 60)"/></svg>
+            <span>78%</span>
+          </div>
+          <div><b>1,284</b><small>readers this week</small></div>
+        </div>
+      </div>
+
+      <div class="story-editor">
+        <div class="se-col">
+          <p class="se-lbl">Cover image</p>
+          <div class="se-cover" style="background:linear-gradient(135deg,#1e3a5f,#4a6fa5)"><span>replace cover</span></div>
+          <p class="se-lbl">Craft village</p>
+          <input class="se-input" value="Ajrakhpur, Kachchh — Gujarat"/>
+          <p class="se-lbl">Years at the craft</p>
+          <input class="se-input" value="26"/>
+        </div>
+        <div class="se-col">
+          <p class="se-lbl">Your story</p>
+          <textarea class="se-input tall">I am Sufiyan Khatri, tenth generation Ajrakh printer in Kachchh. Our indigo vats are fermented for weeks, our blocks are hand-carved from sheesham wood, and every yardage takes 16 stages — from myrobalan soak to camel-dung wash. When you buy an Ajrakh piece, you are keeping a 400-year-old craft alive in the desert.</textarea>
+          <p class="se-lbl">Signature technique</p>
+          <input class="se-input" value="9-dip natural indigo, resist block printing"/>
+          <div class="se-actions"><button class="pill-btn solid">Save story</button><button class="pill-btn ghost">Preview page</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════ VIEW: EARNINGS ═════ -->
+    <section class="aview" data-panel="earnings">
+      <div class="a-page-head">
+        <div><p class="a-eyebrow">Module · 05</p><h2 class="a-title">Earnings</h2><p class="a-sub">What Stackly owes the workshop, and where the money has been.</p></div>
+        <div class="a-metrics"><div><b>₹ 62,400</b><small>next payout</small></div><div><b>₹ 48,620</b><small>this week</small></div><div><b>₹ 4,84,200</b><small>YTD</small></div><div class="mm"><b>₹ 78</b><small>avg per hour</small></div></div>
+      </div>
+
+      <div class="earn-hero">
+        <p class="eh-lbl">Earnings — last 12 weeks</p>
+        <svg viewBox="0 0 600 180" class="earn-chart">
+          <polyline fill="none" stroke="#e8b04a" stroke-width="2.5" points="0,140 50,120 100,130 150,90 200,105 250,80 300,95 350,60 400,72 450,45 500,55 550,30 600,20"/>
+          <polyline fill="rgba(232,176,74,.15)" stroke="none" points="0,140 50,120 100,130 150,90 200,105 250,80 300,95 350,60 400,72 450,45 500,55 550,30 600,20 600,180 0,180"/>
+        </svg>
+        <div class="eh-legend"><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span></div>
+      </div>
+
+      <div class="payout-list">
+        <h3>Payout history</h3>
+        <div class="po"><span class="po-i">₹</span><div><b>Weekly payout</b><small>17 orders · settled to HDFC ••7842</small></div><span class="po-amt">₹ 54,200</span><em class="po-date">10 Jul</em></div>
+        <div class="po"><span class="po-i">₹</span><div><b>Weekly payout</b><small>14 orders</small></div><span class="po-amt">₹ 41,800</span><em class="po-date">03 Jul</em></div>
+        <div class="po"><span class="po-i">₹</span><div><b>Weekly payout</b><small>19 orders</small></div><span class="po-amt">₹ 58,940</span><em class="po-date">26 Jun</em></div>
+        <div class="po"><span class="po-i">₹</span><div><b>Bulk order settlement</b><small>Studio Kaia · 40 pieces</small></div><span class="po-amt">₹ 1,42,000</span><em class="po-date">20 Jun</em></div>
+        <div class="po"><span class="po-i">₹</span><div><b>Weekly payout</b><small>11 orders</small></div><span class="po-amt">₹ 36,200</span><em class="po-date">19 Jun</em></div>
+      </div>
+    </section>
+
+    <!-- ═════ VIEW: WORKSHOP (calendar + chat) ═════ -->
+    <section class="aview" data-panel="workshop">
+      <div class="a-page-head">
+        <div><p class="a-eyebrow">Module · 06</p><h2 class="a-title">Workshop</h2><p class="a-sub">Your rhythm: dye days, dry days, ship days — and buyer chatter.</p></div>
+      </div>
+
+      <div class="triptych">
+        <div class="panel cal-panel">
+          <div class="p-head"><h2>Workshop calendar</h2><span class="mnth">July 2026</span></div>
+          <div class="cal-grid">
+            <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+            <span class="d muted">30</span><span class="d">1</span><span class="d">2</span><span class="d">3</span><span class="d">4</span><span class="d">5</span><span class="d">6</span>
+            <span class="d">7</span><span class="d">8</span><span class="d ev dye">9</span><span class="d">10</span><span class="d">11</span><span class="d">12</span><span class="d">13</span>
+            <span class="d ev pack">14</span><span class="d">15</span><span class="d">16</span><span class="d today">17</span><span class="d ev dye">18</span><span class="d">19</span><span class="d ev pack">20</span>
+            <span class="d">21</span><span class="d ev ship">22</span><span class="d">23</span><span class="d">24</span><span class="d">25</span><span class="d ev market">26</span><span class="d">27</span>
+            <span class="d">28</span><span class="d">29</span><span class="d">30</span><span class="d">31</span><span class="d muted">1</span><span class="d muted">2</span><span class="d muted">3</span>
+          </div>
+          <div class="legend"><span><i class="dot dye"></i>Dye day</span><span><i class="dot pack"></i>Pack day</span><span><i class="dot ship"></i>Ship</span><span><i class="dot market"></i>Market</span></div>
+        </div>
+
+        <div class="panel msg-panel">
+          <div class="p-head"><h2>Buyer notes</h2></div>
+          <div class="chat">
+            <div class="bubble in"><p>Could the fringe be a touch longer? Beautiful work as always 🙏</p><small>Ananya · 10:20</small></div>
+            <div class="bubble out"><p>Sure — I'll add 2cm on both sides. Kiln fires tomorrow.</p><small>You · 10:31</small></div>
+            <div class="bubble in"><p>Would you take a bulk order of 40 stoles for a Diwali pop-up?</p><small>Studio Kaia · yesterday</small></div>
+          </div>
+          <div class="composer"><input id="msg" placeholder="Reply to buyer…" /><button id="send">Send</button></div>
+        </div>
+
+        <div class="panel story-panel">
+          <h2>Today's plan</h2>
+          <p class="story-sub">Friday · 17 July</p>
+          <ul class="plan">
+            <li><span class="chk on"></span> Second indigo dip — KG-2810, KG-2795</li>
+            <li><span class="chk on"></span> Fringe correction on Ajrakh stole</li>
+            <li><span class="chk"></span> Reply to Studio Kaia (bulk 40)</li>
+            <li><span class="chk"></span> Pack KG-2807 for parcel service</li>
+            <li><span class="chk"></span> Photograph new Kaatha set for listing</li>
+          </ul>
+          <a class="edit-story" href="#">Add task →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>Stackly° studio · v 3.1</span>
+      <span>synced 2 minutes ago</span>
+      <span>© 2026</span>
+    </footer>
+  </main>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="js/admin.js"></script>
+</body>
+</html>

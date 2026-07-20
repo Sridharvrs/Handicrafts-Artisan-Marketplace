@@ -652,3 +652,324 @@
     color:var(--ink-2);
     font-size:.9rem;
 }
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+/*==============================
+        1200px
+==============================*/
+
+@media (max-width:1200px){
+
+.editorial-head{
+    grid-template-columns:1fr 350px;
+    gap:60px;
+}
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.stats-feature{
+    grid-column:1/-1;
+}
+
+.master-grid{
+    gap:45px;
+}
+
+.master-image img{
+    height:560px;
+}
+
+.craft-grid,
+.technique-grid,
+.stories-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-item.large,
+.gallery-item.wide{
+    grid-column:auto;
+    grid-row:auto;
+}
+
+}
+
+/*==============================
+        992px
+==============================*/
+
+@media (max-width:992px){
+
+.section{
+    padding:80px 0;
+}
+
+/* Hero */
+
+.a-hero{
+    padding:130px 20px 70px;
+}
+
+.a-hero h1{
+    font-size:58px;
+}
+
+/* Artisan */
+
+.artisan,
+.artisan:nth-child(even){
+    grid-template-columns:1fr;
+    gap:40px;
+    direction:ltr;
+}
+
+.artisans-list{
+    gap:80px;
+}
+
+.artisan__img{
+    max-width:600px;
+    margin:auto;
+}
+
+.artisan__stats{
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+/* Master */
+
+.master-grid{
+    grid-template-columns:1fr;
+}
+
+.master-image img{
+    height:500px;
+}
+
+/* Statistics */
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Cards */
+
+.craft-grid,
+.technique-grid,
+.stories-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+    grid-auto-rows:240px;
+}
+
+.join-cta{
+    padding:60px 40px;
+}
+
+}
+
+/*==============================
+        768px
+==============================*/
+
+@media (max-width:768px){
+
+.a-hero h1{
+    font-size:46px;
+}
+
+.a-hero p{
+    font-size:16px;
+}
+
+.editorial-head{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.artisan__stats{
+    gap:25px;
+}
+
+.artisan__num{
+    font-size:70px;
+}
+
+.stats-grid,
+.craft-grid,
+.technique-grid,
+.stories-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-item{
+    height:300px;
+}
+
+.gallery-item.large,
+.gallery-item.wide{
+    grid-column:auto;
+    grid-row:auto;
+}
+
+.master-image img{
+    height:400px;
+}
+
+.master-achievements{
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.master-footer{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.join-cta{
+    padding:50px 30px;
+}
+
+}
+
+/*==============================
+        576px
+==============================*/
+
+@media (max-width:576px){
+
+.a-hero{
+    padding:110px 20px 60px;
+}
+
+.a-hero{
+    padding-top: 20px;
+}
+
+.a-hero h1{
+    font-size:38px;
+}
+
+.artisan__img{
+    border-radius:30px;
+}
+
+.artisan:nth-child(even) .artisan__img{
+    border-radius:30px;
+}
+
+.artisan__stats{
+    flex-direction:column;
+    gap:18px;
+}
+
+.stats-feature{
+    padding:35px 25px;
+}
+
+.stats-feature h2{
+    font-size:64px;
+}
+
+.stats-card{
+    padding:28px;
+}
+
+.master-image img{
+    height:320px;
+}
+
+.master-content blockquote{
+    font-size:24px;
+    padding-left:18px;
+}
+
+.master-achievements{
+    flex-direction:column;
+}
+
+.craft-card,
+.technique-card,
+.story-content{
+    padding:24px;
+}
+
+.story-card img{
+    height:220px;
+}
+
+.gallery-item{
+    height:240px;
+}
+
+.join-cta{
+    padding:40px 25px;
+}
+
+.join-cta h2{
+    font-size:34px;
+}
+
+.join-cta .btn{
+    width:100%;
+    justify-content:center;
+}
+
+}
+
+/*==============================
+        400px
+==============================*/
+
+@media (max-width:400px){
+
+.a-hero h1{
+    font-size:32px;
+}
+
+.artisan__num{
+    font-size:52px;
+}
+
+.stats-feature h2{
+    font-size:52px;
+}
+
+.master-image img{
+    height:260px;
+}
+
+.master-content blockquote{
+    font-size:20px;
+}
+
+.gallery-item{
+    height:200px;
+}
+
+.story-card img{
+    height:190px;
+}
+
+.join-cta{
+    margin:60px 20px 0;
+}
+
+}

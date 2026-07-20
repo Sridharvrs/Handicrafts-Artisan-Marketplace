@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="index.html"><span>K</span>Stackly</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="shop.html">Shop</a
+          ><a href="artisans.html">Artisans</a><a href="story.html">Our Story</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <a class="login-btn" href="login.html">Login</a
+        ><button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <aside id="mobileMenu" class="mobile-menu">
+      <div class="menu-top">
+        <a class="logo"><span>K</span>Stackly</a
+        ><button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <h5>Navigation</h5>
+      <nav class="mobile-links">
+        <a href="index.html">Home</a><a href="shop.html">Shop</a
+        ><a href="artisans.html">Artisans</a><a href="story.html">Our Story</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+      <h5>Account</h5>
+      <a class="mobile-login" href="login.html">Login</a>
+      <h5>Contact</h5>
+      <div class="contact-box">
+        <p><strong>Email</strong><br />hello@stackly.com</p>
+        <p><strong>Phone</strong><br />+91 98765 43210</p>
+        <p><strong>Hours</strong><br />Mon–Fri 10:00–18:00</p>
+      </div>
+    </aside>
+    <script src="navbar.js"></script>
+  </body>
+</html>
