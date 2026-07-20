@@ -140,27 +140,28 @@ console.log('%cKarigar° Buyer Console','background:#b3663e;color:#f5efe3;paddin
 
 // ===============================
 const menuToggle = document.getElementById("menuToggle");
-const closeSidebar = document.getElementById("closeSidebar");
 const sidebar = document.querySelector(".bside");
-const overlay = document.getElementById("sidebarOverlay");
+const overlay = document.querySelector(".sidebar-overlay");
 
-function openMenu(){
+menuToggle.addEventListener("click", () => {
 
     sidebar.classList.add("active");
     overlay.classList.add("active");
 
-}
+    document.body.classList.add("no-scroll");
+    document.documentElement.classList.add("no-scroll");
 
-function closeMenu(){
+});
+
+function closeSidebar(){
 
     sidebar.classList.remove("active");
     overlay.classList.remove("active");
 
+    document.body.classList.remove("no-scroll");
+    document.documentElement.classList.remove("no-scroll");
+
 }
 
-menuToggle.addEventListener("click", openMenu);
-
-closeSidebar.addEventListener("click", closeMenu);
-
-overlay.addEventListener("click", closeMenu);
-
+overlay.addEventListener("click", closeSidebar);
+document.getElementById("closeSidebar")?.addEventListener("click", closeSidebar);

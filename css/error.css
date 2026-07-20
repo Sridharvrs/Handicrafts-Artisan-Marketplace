@@ -115,3 +115,43 @@ body{
 }
 
 }
+
+.error-actions{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 34px;
+    border-radius:50px;
+    background:#b3663e;
+    color:#fff;
+    text-decoration:none;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    transition:.3s;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#8a4a2b;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    background:transparent;
+    color:#1e1a15;
+    border:2px solid #b3663e;
+}
+
+.btn-outline:hover{
+    background:#b3663e;
+    color:#fff;
+}
