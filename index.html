@@ -1,104 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Stackly — Handmade by Human Hands</title>
-<meta name="description" content="A curated marketplace of one-of-a-kind handicrafts from independent artisans around the world." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/home.css" />
-</head>
-<body>
-
-<!-- ==========================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stackly — Handmade by Human Hands</title>
+    <meta
+      name="description"
+      content="A curated marketplace of one-of-a-kind handicrafts from independent artisans around the world."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- ==========================================
                 PREMIUM NAVBAR
 =========================================== -->
 
-<nav class="nav" id="navbar">
+    <nav class="nav" id="navbar">
+      <!-- Logo -->
 
-    <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.webp" alt="Stackly Logo" class="logo-img" />
+      </a>
 
-    <a href="index.html" class="nav-logo">
+      <!-- Desktop Navigation -->
 
-    <img src="images/logo.webp"
-         alt="Stackly Logo"
-         class="logo-img">
-
-</a>
-
-
-    <!-- Desktop Navigation -->
-
-    <ul class="nav-links">
-
+      <ul class="nav-links">
         <li>
-            <a href="index.html" class="active">
-                Home
-            </a>
+          <a href="index.html" class="active"> Home </a>
         </li>
 
         <li>
-            <a href="shop.html">
-                Shop
-            </a>
+          <a href="shop.html"> Shop </a>
         </li>
 
         <li>
-            <a href="artisans.html">
-                Artisans
-            </a>
+          <a href="artisans.html"> Artisans </a>
         </li>
 
         <li>
-            <a href="story.html">
-                Our Story
-            </a>
+          <a href="story.html"> Our Story </a>
         </li>
 
         <li>
-            <a href="contact.html">
-                Contact
-            </a>
+          <a href="contact.html"> Contact </a>
         </li>
+      </ul>
 
-    </ul>
+      <!-- Right Side -->
 
-    <!-- Right Side -->
+      <div class="nav-right">
+        <a href="login.html" class="nav-btn"> Login </a>
 
-    <div class="nav-right">
-
-        <a href="login.html" class="nav-btn">
-
-            Login
-
-        </a>
-
-        <button
-            class="burger"
-            id="burger"
-            aria-label="Open Menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
+        <button class="burger" id="burger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+      </div>
 
-    </div>
-
-    <!-- ==============================
+      <!-- ==============================
             MOBILE MENU
     =============================== -->
 
-    <div class="mobile-menu" id="mobileMenu">
-
+      <div class="mobile-menu" id="mobileMenu">
         <!-- Top -->
 
         <!-- <div class="mobile-top">
@@ -123,433 +98,370 @@
         <!-- Navigation -->
 
         <div class="mobile-nav">
+          <span class="menu-label"> Navigation </span>
 
-            <span class="menu-label">
+          <a href="index.html" class="active"> Home </a>
 
-                Navigation
+          <a href="shop.html"> Shop </a>
 
-            </span>
+          <a href="artisans.html"> Artisans </a>
 
-            <a href="index.html" class="active">
+          <a href="story.html"> Our Story </a>
 
-                Home
-
-            </a>
-
-            <a href="shop.html">
-
-                Shop
-
-            </a>
-
-            <a href="artisans.html">
-
-                Artisans
-
-            </a>
-
-            <a href="story.html">
-
-                Our Story
-
-            </a>
-
-            <a href="contact.html">
-
-                Contact
-
-            </a>
-
+          <a href="contact.html"> Contact </a>
         </div>
 
         <!-- Account -->
 
         <div class="mobile-account">
+          <span class="menu-label"> Account </span>
 
-            <span class="menu-label">
-
-                Account
-
-            </span>
-
-            <a
-                href="login.html"
-                class="mobile-btn">
-
-                Login
-
-            </a>
-
+          <a href="login.html" class="mobile-btn"> Login </a>
         </div>
 
         <!-- Contact -->
 
         <div class="mobile-contact">
+          <span class="menu-label"> Contact </span>
 
-            <span class="menu-label">
+          <p>hello@stackly.com</p>
 
-                Contact
+          <p>+91 98765 43210</p>
 
-            </span>
-
-            <p>
-
-                hello@stackly.com
-
-            </p>
-
-            <p>
-
-                +91 98765 43210
-
-            </p>
-
-            <p>
-
-                Mon – Fri • 9 AM – 6 PM
-
-            </p>
-
+          <p>Mon – Fri • 9 AM – 6 PM</p>
         </div>
-
-
-    </div>
-
-    <!-- Overlay -->
-
-    <div
-        class="nav-overlay"
-        id="navOverlay">
-
-    </div>
-
-</nav>
-
-<main>
-  <section class="hero">
-    <div>
-      <span class="eyebrow">Est. 2019 · 42 countries</span>
-      <h1 style="margin-top:20px">Objects made<br/>by <em>human</em><br/>hands.</h1>
-      <div class="hero__meta">
-        <div><strong>420+</strong><p>Independent makers we work with directly</p></div>
-        <div><strong>12k</strong><p>Homes filled with pieces you can't get anywhere else</p></div>
       </div>
-      <div style="margin-top:40px;display:flex;gap:14px;flex-wrap:wrap">
-        <a href="shop.html" class="btn btn--primary">Explore the collection →</a>
-        <a href="story.html" class="btn btn--ghost">Our story</a>
-      </div>
-    </div>
-    <div class="hero__visual">
-      <img src="images/home-1.webp" alt="Handmade ceramic vase" />
-      <div class="hero__badge"><span class="dot"></span> 14 new pieces this week</div>
-    </div>
-    <div class="hero__scroll">scroll to discover</div>
-  </section>
 
-  <div class="marquee">
-    <div class="marquee__track">
-      <span>ceramics</span><span>textiles</span><span>woodwork</span><span>brass</span><span>leather</span><span>glass</span>
-      <span>ceramics</span><span>textiles</span><span>woodwork</span><span>brass</span><span>leather</span><span>glass</span>
-    </div>
-  </div>
+      <!-- Overlay -->
 
-  <section class="section wrap">
-    <div class="sect-head reveal">
-      <div>
-        <span class="eyebrow">Categories</span>
-        <h2 style="margin-top:14px">Six crafts,<br/>infinite stories.</h2>
-      </div>
-      <p>Every piece is signed, numbered, and shipped from the maker's own studio. No middlemen. No mass production.</p>
-    </div>
+      <div class="nav-overlay" id="navOverlay"></div>
+    </nav>
 
-    <div class="bento reveal">
-      <div class="bento__item">
-        <img src="images/home-2.webp" alt="Ceramics" />
-        <span>48 pieces</span>
-        <h3>Ceramics<br/>& Pottery</h3>
-      </div>
-      <div class="bento__item">
-        <img src="images/home-3.webp" alt="Textiles" />
-        <span>32</span>
-        <h3>Woven Textiles</h3>
-      </div>
-      <div class="bento__item">
-        <img src="images/home-4.webp" alt="Wood" />
-        <span>26</span>
-        <h3>Woodcraft</h3>
-      </div>
-      <div class="bento__item">
-        <img src="images/home-5.webp" alt="Brass" />
-        <span>19 pieces</span>
-        <h3>Brass & Metal</h3>
-      </div>
-      <div class="bento__item">
-        <img src="images/home-6.webp" alt="Leather" />
-        <span>15</span>
-        <h3>Leather Goods</h3>
-      </div>
-      <div class="bento__item">
-        <img src="images/home-7.webp" alt="Glass" />
-        <span>22 pieces</span>
-        <h3>Blown Glass</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section-2 -->
-<section class="craft-process section wrap">
-
-    <div class="sect-head reveal">
+    <main>
+      <section class="hero">
         <div>
-            <span class="eyebrow">Crafting Process</span>
-            <h2 style="margin-top:14px">
-                From raw materials<br>
-                to timeless treasures.
-            </h2>
+          <span class="eyebrow">Est. 2019 · 42 countries</span>
+          <h1 style="margin-top: 20px">
+            Objects made<br />by <em>human</em><br />hands.
+          </h1>
+          <div class="hero__meta">
+            <div>
+              <strong>420+</strong>
+              <p>Independent makers we work with directly</p>
+            </div>
+            <div>
+              <strong>12k</strong>
+              <p>Homes filled with pieces you can't get anywhere else</p>
+            </div>
+          </div>
+          <div
+            style="margin-top: 40px; display: flex; gap: 14px; flex-wrap: wrap"
+          >
+            <a href="shop.html" class="btn btn--primary"
+              >Explore the collection →</a
+            >
+            <a href="story.html" class="btn btn--ghost">Our story</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img src="images/home-1.webp" alt="Handmade ceramic vase" />
+          <div class="hero__badge">
+            <span class="dot"></span> 14 new pieces this week
+          </div>
+        </div>
+        <!-- <div class="hero__scroll">scroll to discover</div> -->
+      </section>
+
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>ceramics</span><span>textiles</span><span>woodwork</span
+          ><span>brass</span><span>leather</span><span>glass</span>
+          <span>ceramics</span><span>textiles</span><span>woodwork</span
+          ><span>brass</span><span>leather</span><span>glass</span>
+        </div>
+      </div>
+
+      <section class="section wrap">
+        <div class="sect-head reveal">
+          <div>
+            <span class="eyebrow">Categories</span>
+            <h2 style="margin-top: 14px">Six crafts,<br />infinite stories.</h2>
+          </div>
+          <p>
+            Every piece is signed, numbered, and shipped from the maker's own
+            studio. No middlemen. No mass production.
+          </p>
         </div>
 
-        <p>
+        <div class="bento reveal">
+          <div class="bento__item">
+            <img src="images/home-2.webp" alt="Ceramics" />
+            <span>48 pieces</span>
+            <h3>Ceramics<br />& Pottery</h3>
+          </div>
+          <div class="bento__item">
+            <img src="images/home-3.webp" alt="Textiles" />
+            <span>32</span>
+            <h3>Woven Textiles</h3>
+          </div>
+          <div class="bento__item">
+            <img src="images/home-4.webp" alt="Wood" />
+            <span>26</span>
+            <h3>Woodcraft</h3>
+          </div>
+          <div class="bento__item">
+            <img src="images/home-5.webp" alt="Brass" />
+            <span>19 pieces</span>
+            <h3>Brass & Metal</h3>
+          </div>
+          <div class="bento__item">
+            <img src="images/home-6.webp" alt="Leather" />
+            <span>15</span>
+            <h3>Leather Goods</h3>
+          </div>
+          <div class="bento__item">
+            <img src="images/home-7.webp" alt="Glass" />
+            <span>22 pieces</span>
+            <h3>Blown Glass</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section-2 -->
+      <section class="craft-process section wrap">
+        <div class="sect-head reveal">
+          <div>
+            <span class="eyebrow">Crafting Process</span>
+            <h2 style="margin-top: 14px">
+              From raw materials<br />
+              to timeless treasures.
+            </h2>
+          </div>
+
+          <p>
             Every handcrafted piece follows a careful journey. Our artisans
             combine traditional techniques, patience, and creativity to create
             products that are truly one of a kind.
-        </p>
-    </div>
+          </p>
+        </div>
 
-    <div class="process-grid reveal">
-
-        <div class="process-card">
+        <div class="process-grid reveal">
+          <div class="process-card">
             <div class="process-number">01</div>
 
             <div class="process-image">
-                <img src="images/home-8.webp"
-                    alt="Selecting materials">
+              <img src="images/home-8.webp" alt="Selecting materials" />
             </div>
 
             <h3>Select Materials</h3>
 
             <p>
-                Premium clay, natural wood, organic cotton, and recycled metals
-                are carefully selected for every creation.
+              Premium clay, natural wood, organic cotton, and recycled metals
+              are carefully selected for every creation.
             </p>
-        </div>
+          </div>
 
-        <div class="process-card">
+          <div class="process-card">
             <div class="process-number">02</div>
 
             <div class="process-image">
-                <img src="images/home-9.webp"
-                    alt="Hand crafting">
+              <img src="images/home-9.webp" alt="Hand crafting" />
             </div>
 
             <h3>Hand Crafted</h3>
 
             <p>
-                Skilled artisans shape every detail using techniques passed down
-                through generations.
+              Skilled artisans shape every detail using techniques passed down
+              through generations.
             </p>
-        </div>
+          </div>
 
-        <div class="process-card">
+          <div class="process-card">
             <div class="process-number">03</div>
 
             <div class="process-image">
-                <img src="images/home-10.webp"
-                    alt="Finishing">
+              <img src="images/home-10.webp" alt="Finishing" />
             </div>
 
             <h3>Finishing Touches</h3>
 
             <p>
-                Each piece is polished, painted, carved, or woven by hand to
-                achieve its final unique appearance.
+              Each piece is polished, painted, carved, or woven by hand to
+              achieve its final unique appearance.
             </p>
-        </div>
+          </div>
 
-        <div class="process-card">
+          <div class="process-card">
             <div class="process-number">04</div>
 
             <div class="process-image">
-                <img src="images/home-11.webp"
-                    alt="Quality check">
+              <img src="images/home-11.webp" alt="Quality check" />
             </div>
 
             <h3>Quality Inspection</h3>
 
             <p>
-                Every product is inspected to ensure exceptional craftsmanship,
-                durability, and authenticity.
+              Every product is inspected to ensure exceptional craftsmanship,
+              durability, and authenticity.
             </p>
-        </div>
+          </div>
 
-        <div class="process-card">
+          <div class="process-card">
             <div class="process-number">05</div>
 
             <div class="process-image">
-                <img src="images/home-12.webp"
-                    alt="Packaging">
+              <img src="images/home-12.webp" alt="Packaging" />
             </div>
 
             <h3>Carefully Packed</h3>
 
             <p>
-                Finished creations are wrapped using eco-friendly packaging and
-                shipped safely from the artisan's workshop to your home.
+              Finished creations are wrapped using eco-friendly packaging and
+              shipped safely from the artisan's workshop to your home.
             </p>
+          </div>
         </div>
+      </section>
 
-    </div>
-
-</section>
-
-<!-- section-4 -->
-<section class="region section wrap">
-
-    <div class="sect-head reveal">
-        <div>
+      <!-- section-4 -->
+      <section class="region section wrap">
+        <div class="sect-head reveal">
+          <div>
             <span class="eyebrow">Shop by Region</span>
-            <h2 style="margin-top:14px">
-                Explore craftsmanship<br>
-                from around the world.
+            <h2 style="margin-top: 14px">
+              Explore craftsmanship<br />
+              from around the world.
             </h2>
-        </div>
+          </div>
 
-        <p>
+          <p>
             Every region has its own artistic heritage. Discover handcrafted
             collections inspired by local traditions, natural materials, and
             generations of skilled artisans.
-        </p>
-    </div>
-
-    <div class="region-grid reveal">
-
-        <article class="region-card large">
-            <img src="images/home-13.webp" alt="India">
-
-            <div class="region-overlay">
-                <span>🇮🇳 India</span>
-                <h3>Traditional Handicrafts</h3>
-                <p>Pottery • Brass • Textiles • Woodwork</p>
-
-                <a href="error.html" class="region-link">
-                    Explore Collection →
-                </a>
-            </div>
-        </article>
-
-        <article class="region-card">
-            <img src="images/home-14.webp" alt="Japan">
-
-            <div class="region-overlay">
-                <span>🇯🇵 Japan</span>
-                <h3>Minimal Ceramics</h3>
-            </div>
-        </article>
-
-        <article class="region-card">
-            <img src="images/home-15.webp" alt="Morocco">
-
-            <div class="region-overlay">
-                <span>🇲🇦 Morocco</span>
-                <h3>Colorful Leather & Rugs</h3>
-            </div>
-        </article>
-
-        <article class="region-card">
-            <img src="images/home-16.webp" alt="Mexico">
-
-            <div class="region-overlay">
-                <span>🇲🇽 Mexico</span>
-                <h3>Hand Painted Pottery</h3>
-            </div>
-        </article>
-
-        <article class="region-card">
-            <img src="images/home-17.webp" alt="Thailand">
-
-            <div class="region-overlay">
-                <span>🇹🇭 Thailand</span>
-                <h3>Natural Bamboo Craft</h3>
-            </div>
-        </article>
-
-    </div>
-
-</section>
-
-<!-- section-5 -->
-<section class="handmade section wrap">
-
-    <div class="sect-head reveal">
-        <div>
-            <span class="eyebrow">Why Handmade Matters</span>
-            <h2 style="margin-top:14px">
-                More than products,<br>
-                they're stories you can hold.
-            </h2>
+          </p>
         </div>
 
-        <p>
+        <div class="region-grid reveal">
+          <article class="region-card large">
+            <img src="images/home-13.webp" alt="India" />
+
+            <div class="region-overlay">
+              <span>🇮🇳 India</span>
+              <h3>Traditional Handicrafts</h3>
+              <p>Pottery • Brass • Textiles • Woodwork</p>
+
+              <a href="error.html" class="region-link">
+                Explore Collection →
+              </a>
+            </div>
+          </article>
+
+          <article class="region-card">
+            <img src="images/home-14.webp" alt="Japan" />
+
+            <div class="region-overlay">
+              <span>🇯🇵 Japan</span>
+              <h3>Minimal Ceramics</h3>
+            </div>
+          </article>
+
+          <article class="region-card">
+            <img src="images/home-15.webp" alt="Morocco" />
+
+            <div class="region-overlay">
+              <span>🇲🇦 Morocco</span>
+              <h3>Colorful Leather & Rugs</h3>
+            </div>
+          </article>
+
+          <article class="region-card">
+            <img src="images/home-16.webp" alt="Mexico" />
+
+            <div class="region-overlay">
+              <span>🇲🇽 Mexico</span>
+              <h3>Hand Painted Pottery</h3>
+            </div>
+          </article>
+
+          <article class="region-card">
+            <img src="images/home-17.webp" alt="Thailand" />
+
+            <div class="region-overlay">
+              <span>🇹🇭 Thailand</span>
+              <h3>Natural Bamboo Craft</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- section-5 -->
+      <section class="handmade section wrap">
+        <div class="sect-head reveal">
+          <div>
+            <span class="eyebrow">Why Handmade Matters</span>
+            <h2 style="margin-top: 14px">
+              More than products,<br />
+              they're stories you can hold.
+            </h2>
+          </div>
+
+          <p>
             Choosing handmade means celebrating craftsmanship, preserving
             traditions, and supporting the people who dedicate their lives to
             creating something truly unique.
-        </p>
-    </div>
+          </p>
+        </div>
 
-    <div class="handmade-grid reveal">
-
-        <article class="handmade-card">
+        <div class="handmade-grid reveal">
+          <article class="handmade-card">
             <div class="handmade-icon">🖐</div>
 
             <h3>Crafted by Hand</h3>
 
             <p>
-                Every item is carefully shaped, woven, carved, or painted by
-                skilled artisans—not manufactured on an assembly line.
+              Every item is carefully shaped, woven, carved, or painted by
+              skilled artisans—not manufactured on an assembly line.
             </p>
-        </article>
+          </article>
 
-        <article class="handmade-card">
+          <article class="handmade-card">
             <div class="handmade-icon">🌿</div>
 
             <h3>Sustainably Made</h3>
 
             <p>
-                We prioritize responsibly sourced materials and eco-friendly
-                production methods that respect both nature and local
-                communities.
+              We prioritize responsibly sourced materials and eco-friendly
+              production methods that respect both nature and local communities.
             </p>
-        </article>
+          </article>
 
-        <article class="handmade-card">
+          <article class="handmade-card">
             <div class="handmade-icon">❤️</div>
 
             <h3>Supports Artisan Families</h3>
 
             <p>
-                Every purchase contributes directly to independent makers,
-                helping preserve traditional crafts and create sustainable
-                livelihoods.
+              Every purchase contributes directly to independent makers, helping
+              preserve traditional crafts and create sustainable livelihoods.
             </p>
-        </article>
+          </article>
 
-        <article class="handmade-card">
+          <article class="handmade-card">
             <div class="handmade-icon">✨</div>
 
             <h3>One of a Kind</h3>
 
             <p>
-                Natural materials and handmade techniques ensure every piece
-                carries its own distinctive character and charm.
+              Natural materials and handmade techniques ensure every piece
+              carries its own distinctive character and charm.
             </p>
-        </article>
+          </article>
+        </div>
+      </section>
 
-    </div>
+      <!-- section-6 -->
 
-</section>
-
-<!-- section-6 -->
-
-<!-- <section class="limited reveal">
+      <!-- <section class="limited reveal">
 
     <img
         src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=1600&auto=format&fit=crop"
@@ -601,623 +513,637 @@
 
 </section> -->
 
-<!-- section-7 -->
+      <!-- section-7 -->
 
-<section class="materials section wrap">
-
-    <div class="sect-head reveal">
-        <div>
+      <section class="materials section wrap">
+        <div class="sect-head reveal">
+          <div>
             <span class="eyebrow">Materials We Love</span>
-            <h2 style="margin-top:14px">
-                Nature inspires<br>
-                every creation.
+            <h2 style="margin-top: 14px">
+              Nature inspires<br />
+              every creation.
             </h2>
+          </div>
+
+          <p>
+            We carefully source premium natural materials that celebrate
+            authenticity, durability, and timeless beauty. Every texture tells a
+            story of craftsmanship and tradition.
+          </p>
         </div>
 
-        <p>
-            We carefully source premium natural materials that celebrate
-            authenticity, durability, and timeless beauty. Every texture tells
-            a story of craftsmanship and tradition.
-        </p>
-    </div>
-
-    <div class="materials-grid reveal">
-
-        <article class="material-card">
-            <img src="images/home-18.webp" alt="Clay">
+        <div class="materials-grid reveal">
+          <article class="material-card">
+            <img src="images/home-18.webp" alt="Clay" />
             <h3>Clay</h3>
             <p>Hand-shaped pottery and ceramics.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-19.webp" alt="Wood">
+          <article class="material-card">
+            <img src="images/home-19.webp" alt="Wood" />
             <h3>Natural Wood</h3>
             <p>Beautifully carved wooden creations.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-20.webp" alt="Cotton">
+          <article class="material-card">
+            <img src="images/home-20.webp" alt="Cotton" />
             <h3>Organic Cotton</h3>
             <p>Soft handwoven textiles and fabrics.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-21.webp" alt="Leather">
+          <article class="material-card">
+            <img src="images/home-21.webp" alt="Leather" />
             <h3>Leather</h3>
             <p>Crafted using traditional leatherwork.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-22.webp" alt="Brass">
+          <article class="material-card">
+            <img src="images/home-22.webp" alt="Brass" />
             <h3>Brass</h3>
             <p>Elegant handcrafted home décor.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-23.webp" alt="Glass">
+          <article class="material-card">
+            <img src="images/home-23.webp" alt="Glass" />
             <h3>Glass</h3>
             <p>Hand-blown decorative glass pieces.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-24.webp" alt="Bamboo">
+          <article class="material-card">
+            <img src="images/home-24.webp" alt="Bamboo" />
             <h3>Bamboo</h3>
             <p>Sustainable handcrafted accessories.</p>
-        </article>
+          </article>
 
-        <article class="material-card">
-            <img src="images/home-25.webp" alt="Stone">
+          <article class="material-card">
+            <img src="images/home-25.webp" alt="Stone" />
             <h3>Natural Stone</h3>
             <p>Timeless sculptures and décor pieces.</p>
-        </article>
-
-    </div>
-
-</section>
-
-<!-- section-8 -->
-<section class="sustainability section">
-
-    <div class="sustainability-grid">
-
-        <!-- LEFT -->
-
-        <div class="sustainability-image reveal">
-
-            <img src="images/home-26.webp"
-                alt="Sustainable Craftsmanship">
-
+          </article>
         </div>
+      </section>
 
-        <!-- RIGHT -->
+      <!-- section-8 -->
+      <section class="sustainability section">
+        <div class="sustainability-grid">
+          <!-- LEFT -->
 
-        <div class="sustainability-content reveal">
+          <div class="sustainability-image reveal">
+            <img src="images/home-26.webp" alt="Sustainable Craftsmanship" />
+          </div>
 
+          <!-- RIGHT -->
+
+          <div class="sustainability-content reveal">
             <span class="eyebrow">Sustainability Commitment</span>
 
-            <h2 style="margin-top:14px">
-                Handmade today.<br>
-                Better tomorrow.
+            <h2 style="margin-top: 14px">
+              Handmade today.<br />
+              Better tomorrow.
             </h2>
 
             <p class="sustainability-text">
-                Sustainability isn't a trend for us—it's part of every decision
-                we make. From responsibly sourced materials to plastic-free
-                packaging, we work alongside artisans who respect both
-                traditional craftsmanship and the environment.
+              Sustainability isn't a trend for us—it's part of every decision we
+              make. From responsibly sourced materials to plastic-free
+              packaging, we work alongside artisans who respect both traditional
+              craftsmanship and the environment.
             </p>
 
             <div class="sustainability-list">
+              <div class="s-item">
+                <span>🌿</span>
 
-                <div class="s-item">
-                    <span>🌿</span>
-
-                    <div>
-                        <h4>Natural Materials</h4>
-                        <p>
-                            Wood, clay, cotton, bamboo and recycled metals
-                            sourced responsibly.
-                        </p>
-                    </div>
+                <div>
+                  <h4>Natural Materials</h4>
+                  <p>
+                    Wood, clay, cotton, bamboo and recycled metals sourced
+                    responsibly.
+                  </p>
                 </div>
+              </div>
 
-                <div class="s-item">
-                    <span>📦</span>
+              <div class="s-item">
+                <span>📦</span>
 
-                    <div>
-                        <h4>Plastic-Free Packaging</h4>
-                        <p>
-                            Every order is packed using recyclable and
-                            biodegradable materials.
-                        </p>
-                    </div>
+                <div>
+                  <h4>Plastic-Free Packaging</h4>
+                  <p>
+                    Every order is packed using recyclable and biodegradable
+                    materials.
+                  </p>
                 </div>
+              </div>
 
-                <div class="s-item">
-                    <span>🤝</span>
+              <div class="s-item">
+                <span>🤝</span>
 
-                    <div>
-                        <h4>Fair Trade Partnerships</h4>
-                        <p>
-                            Supporting artisan families with ethical pricing and
-                            long-term collaborations.
-                        </p>
-                    </div>
+                <div>
+                  <h4>Fair Trade Partnerships</h4>
+                  <p>
+                    Supporting artisan families with ethical pricing and
+                    long-term collaborations.
+                  </p>
                 </div>
+              </div>
 
-                <div class="s-item">
-                    <span>♻️</span>
+              <div class="s-item">
+                <span>♻️</span>
 
-                    <div>
-                        <h4>Low-Waste Production</h4>
-                        <p>
-                            Small-batch craftsmanship helps reduce waste and
-                            overproduction.
-                        </p>
-                    </div>
+                <div>
+                  <h4>Low-Waste Production</h4>
+                  <p>
+                    Small-batch craftsmanship helps reduce waste and
+                    overproduction.
+                  </p>
                 </div>
-
+              </div>
             </div>
 
             <div class="s-stats">
+              <div>
+                <strong>420+</strong>
+                <span>Artisans</span>
+              </div>
 
-                <div>
-                    <strong>420+</strong>
-                    <span>Artisans</span>
-                </div>
+              <div>
+                <strong>32</strong>
+                <span>Countries</span>
+              </div>
 
-                <div>
-                    <strong>32</strong>
-                    <span>Countries</span>
-                </div>
-
-                <div>
-                    <strong>100%</strong>
-                    <span>Handmade</span>
-                </div>
-
+              <div>
+                <strong>100%</strong>
+                <span>Handmade</span>
+              </div>
             </div>
 
             <a href="error.html" class="btn btn--primary">
-                Learn Our Story →
+              Learn Our Story →
             </a>
-
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- section-9 -->
 
-</section>
-
-<!-- section-9 -->
-
-<section class="makers section wrap">
-
-    <div class="sect-head reveal">
-        <div>
+      <section class="makers section wrap">
+        <div class="sect-head reveal">
+          <div>
             <span class="eyebrow">Meet the Makers</span>
-            <h2 style="margin-top:14px">
-                Every masterpiece has<br>
-                a human behind it.
+            <h2 style="margin-top: 14px">
+              Every masterpiece has<br />
+              a human behind it.
             </h2>
-        </div>
+          </div>
 
-        <p>
+          <p>
             Behind every handcrafted piece is an artisan preserving generations
             of tradition. Discover the people whose passion transforms raw
             materials into timeless creations.
-        </p>
-    </div>
-
-    <div class="makers-grid reveal">
-
-        <!-- Artisan 1 -->
-
-        <article class="maker-card">
-
-            <div class="maker-image">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&auto=format&fit=crop" alt="Pottery artisan">
-            </div>
-
-            <div class="maker-content">
-
-                <span class="maker-country">
-                    🇮🇳 Jaipur, India
-                </span>
-
-                <h3>Aarav Sharma</h3>
-
-                <p class="maker-role">
-                    Master Ceramic Artist
-                </p>
-
-                <p>
-                    Aarav has spent over 18 years crafting handmade pottery
-                    using traditional clay techniques passed down through three
-                    generations of his family.
-                </p>
-
-                <div class="maker-stats">
-                    <div>
-                        <strong>18+</strong>
-                        <span>Years</span>
-                    </div>
-
-                    <div>
-                        <strong>420</strong>
-                        <span>Pieces</span>
-                    </div>
-
-                    <div>
-                        <strong>4.9★</strong>
-                        <span>Rating</span>
-                    </div>
-                </div>
-
-            </div>
-
-        </article>
-
-        <!-- Artisan 2 -->
-
-        <article class="maker-card">
-
-            <div class="maker-image">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop" alt="Textile artisan">
-            </div>
-
-            <div class="maker-content">
-
-                <span class="maker-country">
-                    🇹🇭 Chiang Mai
-                </span>
-
-                <h3>Maya Chen</h3>
-
-                <p class="maker-role">
-                    Textile Weaver
-                </p>
-
-                <p>
-                    Maya creates luxurious woven textiles inspired by nature,
-                    combining traditional weaving techniques with contemporary
-                    design.
-                </p>
-
-                <div class="maker-stats">
-
-                    <div>
-                        <strong>14+</strong>
-                        <span>Years</span>
-                    </div>
-
-                    <div>
-                        <strong>310</strong>
-                        <span>Works</span>
-                    </div>
-
-                    <div>
-                        <strong>98%</strong>
-                        <span>Happy Buyers</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-<!-- section-10 -->
-
-
-  <section class="pull-quote reveal">
-    <blockquote>"When you buy something made by a person, you inherit a little of that person — their hours, their attention, their hands."</blockquote>
-    <cite>— Ayaan Mehta, founder of Stackly</cite>
-  </section>
-
-  <section class="section wrap">
-    <div class="sect-head reveal">
-      <div>
-        <span class="eyebrow">This week</span>
-        <h2 style="margin-top:14px">Fresh from the kiln.</h2>
-      </div>
-      <a href="shop.html" class="btn btn--ghost">See everything →</a>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="reveal">
-      <div><div style="aspect-ratio:1;border-radius:18px;overflow:hidden;margin-bottom:12px"><img src="images/home-29.webp" alt=""></div><h3 style="font-family:var(--f-body);font-size:1.1rem;font-weight:500">Ochre Tea Bowl</h3><p style="color:var(--terracotta);font-family:var(--f-display);font-size:1.2rem">$64</p></div>
-      <div><div style="aspect-ratio:1;border-radius:18px;overflow:hidden;margin-bottom:12px"><img src="images/home-30.webp" alt=""></div><h3 style="font-family:var(--f-body);font-size:1.1rem;font-weight:500">Handloom Throw</h3><p style="color:var(--terracotta);font-family:var(--f-display);font-size:1.2rem">$180</p></div>
-      <div><div style="aspect-ratio:1;border-radius:18px;overflow:hidden;margin-bottom:12px"><img src="images/home-31.webp" alt=""></div><h3 style="font-family:var(--f-body);font-size:1.1rem;font-weight:500">Brass Diya Set</h3><p style="color:var(--terracotta);font-family:var(--f-display);font-size:1.2rem">$95</p></div>
-    </div>
-  </section>
-
-<!-- section-12 -->
-<section class="reviews section wrap">
-
-    <div class="sect-head reveal">
-        <div>
-            <span class="eyebrow">Customer Reviews</span>
-            <h2 style="margin-top:14px">
-                Loved by homes<br>
-                around the world.
-            </h2>
+          </p>
         </div>
 
-        <p>
-            Thousands of customers have welcomed handcrafted pieces into
-            their homes. Here's what they have to say.
-        </p>
-    </div>
+        <div class="makers-grid reveal">
+          <!-- Artisan 1 -->
 
-    <div class="reviews-grid reveal">
+          <article class="maker-card">
+            <div class="maker-image">
+              <img src="images/team4.webp" alt="Pottery artisan" />
+            </div>
 
-        <article class="review-card">
+            <div class="maker-content">
+              <span class="maker-country"> 🇮🇳 Jaipur, India </span>
 
-            <div class="review-top">
+              <h3>Aarav Sharma</h3>
 
-                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+              <p class="maker-role">Master Ceramic Artist</p>
 
+              <p>
+                Aarav has spent over 18 years crafting handmade pottery using
+                traditional clay techniques passed down through three
+                generations of his family.
+              </p>
+
+              <div class="maker-stats">
                 <div>
-                    <h4>Emma Wilson</h4>
-                    <span>London, UK</span>
+                  <strong>18+</strong>
+                  <span>Years</span>
                 </div>
 
+                <div>
+                  <strong>420</strong>
+                  <span>Pieces</span>
+                </div>
+
+                <div>
+                  <strong>4.9★</strong>
+                  <span>Rating</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artisan 2 -->
+
+          <article class="maker-card">
+            <div class="maker-image">
+              <img src="images/team1.webp" alt="Textile artisan" />
+            </div>
+
+            <div class="maker-content">
+              <span class="maker-country"> 🇹🇭 Chiang Mai </span>
+
+              <h3>Maya Chen</h3>
+
+              <p class="maker-role">Textile Weaver</p>
+
+              <p>
+                Maya creates luxurious woven textiles inspired by nature,
+                combining traditional weaving techniques with contemporary
+                design.
+              </p>
+
+              <div class="maker-stats">
+                <div>
+                  <strong>14+</strong>
+                  <span>Years</span>
+                </div>
+
+                <div>
+                  <strong>310</strong>
+                  <span>Works</span>
+                </div>
+
+                <div>
+                  <strong>98%</strong>
+                  <span>Happy Buyers</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- section-10 -->
+
+      <section class="pull-quote reveal">
+        <blockquote>
+          "When you buy something made by a person, you inherit a little of that
+          person — their hours, their attention, their hands."
+        </blockquote>
+        <cite>— Ayaan Mehta, founder of Stackly</cite>
+      </section>
+
+      <section class="section wrap">
+        <div class="sect-head reveal">
+          <div>
+            <span class="eyebrow">This week</span>
+            <h2 style="margin-top: 14px">Fresh from the kiln.</h2>
+          </div>
+          <a href="error.html" class="btn btn--ghost">See everything →</a>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+          "
+          class="reveal"
+        >
+          <div>
+            <div
+              style="
+                aspect-ratio: 1;
+                border-radius: 18px;
+                overflow: hidden;
+                margin-bottom: 12px;
+              "
+            >
+              <img
+                src="images/home-20.webp"
+                alt=""
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+            <h3
+              style="
+                font-family: var(--f-body);
+                font-size: 1.1rem;
+                font-weight: 500;
+              "
+            >
+              Ochre Tea Bowl
+            </h3>
+            <p
+              style="
+                color: var(--terracotta);
+                font-family: var(--f-display);
+                font-size: 1.2rem;
+              "
+            >
+              $64
+            </p>
+          </div>
+          <div>
+            <div
+              style="
+                aspect-ratio: 1;
+                border-radius: 18px;
+                overflow: hidden;
+                margin-bottom: 12px;
+              "
+            >
+              <img src="images/home-30.webp" alt="" />
+            </div>
+            <h3
+              style="
+                font-family: var(--f-body);
+                font-size: 1.1rem;
+                font-weight: 500;
+              "
+            >
+              Handloom Throw
+            </h3>
+            <p
+              style="
+                color: var(--terracotta);
+                font-family: var(--f-display);
+                font-size: 1.2rem;
+              "
+            >
+              $180
+            </p>
+          </div>
+          <div>
+            <div
+              style="
+                aspect-ratio: 1;
+                border-radius: 18px;
+                overflow: hidden;
+                margin-bottom: 12px;
+              "
+            >
+              <img src="images/home-31.webp" alt="" />
+            </div>
+            <h3
+              style="
+                font-family: var(--f-body);
+                font-size: 1.1rem;
+                font-weight: 500;
+              "
+            >
+              Brass Diya Set
+            </h3>
+            <p
+              style="
+                color: var(--terracotta);
+                font-family: var(--f-display);
+                font-size: 1.2rem;
+              "
+            >
+              $95
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-12 -->
+      <section class="reviews section wrap">
+        <div class="sect-head reveal">
+          <div>
+            <span class="eyebrow">Customer Reviews</span>
+            <h2 style="margin-top: 14px">
+              Loved by homes<br />
+              around the world.
+            </h2>
+          </div>
+
+          <p>
+            Thousands of customers have welcomed handcrafted pieces into their
+            homes. Here's what they have to say.
+          </p>
+        </div>
+
+        <div class="reviews-grid reveal">
+          <article class="review-card">
+            <div class="review-top">
+              <img src="images/team2.webp" alt="" />
+
+              <div>
+                <h4>Emma Wilson</h4>
+                <span>London, UK</span>
+              </div>
             </div>
 
             <div class="stars">★★★★★</div>
 
             <p>
-                Beautiful craftsmanship. The pottery looks even better in
-                person and arrived perfectly packed.
+              Beautiful craftsmanship. The pottery looks even better in person
+              and arrived perfectly packed.
             </p>
+          </article>
 
-        </article>
-
-        <article class="review-card">
-
+          <article class="review-card">
             <div class="review-top">
+              <img src="images/team3.webp" alt="" />
 
-                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
-
-                <div>
-                    <h4>Lucas Martin</h4>
-                    <span>Paris, France</span>
-                </div>
-
+              <div>
+                <h4>Lucas Martin</h4>
+                <span>Paris, France</span>
+              </div>
             </div>
 
             <div class="stars">★★★★★</div>
 
             <p>
-                Every detail reflects genuine handmade quality. I'll definitely
-                order again.
+              Every detail reflects genuine handmade quality. I'll definitely
+              order again.
             </p>
+          </article>
 
-        </article>
-
-        <article class="review-card">
-
+          <article class="review-card">
             <div class="review-top">
+              <img src="images/team5.webp" alt="" />
 
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
-
-                <div>
-                    <h4>Sophia Lee</h4>
-                    <span>Singapore</span>
-                </div>
-
+              <div>
+                <h4>Sophia Lee</h4>
+                <span>Singapore</span>
+              </div>
             </div>
 
             <div class="stars">★★★★★</div>
 
             <p>
-                A unique centerpiece for my living room. Everyone asks where I
-                bought it.
+              A unique centerpiece for my living room. Everyone asks where I
+              bought it.
             </p>
+          </article>
 
-        </article>
-
-        <article class="review-card">
-
+          <article class="review-card">
             <div class="review-top">
+              <img src="images/team6.webp" alt="" />
 
-                <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="">
-
-                <div>
-                    <h4>Daniel Brown</h4>
-                    <span>New York, USA</span>
-                </div>
-
+              <div>
+                <h4>Daniel Brown</h4>
+                <span>New York, USA</span>
+              </div>
             </div>
 
             <div class="stars">★★★★★</div>
 
             <p>
-                Excellent packaging, premium quality, and wonderful customer
-                support.
+              Excellent packaging, premium quality, and wonderful customer
+              support.
             </p>
+          </article>
+        </div>
+      </section>
+    </main>
 
-        </article>
-
-    </div>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-    <div class="container">
-
+    <footer class="footer">
+      <div class="container">
         <div class="footer-grid">
+          <!-- Brand -->
 
-            <!-- Brand -->
+          <div class="footer-brand">
+            <a href="index.html">
+              <img
+                src="images/logo1.webp"
+                alt="Stackly Logo"
+                class="footer-logo"
+              />
+            </a>
 
-            <div class="footer-brand">
+            <p class="footer-text">
+              Stackly connects artisans with people who value authentic
+              craftsmanship. Every purchase preserves traditional skills,
+              supports local communities, and celebrates handmade excellence
+              across India.
+            </p>
 
-                <img src="images/logo.webp"
-                     alt="Stackly Logo"
-                     class="footer-logo">
+            <div class="social-links">
+              <a href="error.html"><i class="fa-brands fa-facebook-f"></i></a>
 
-                <p class="footer-text">
-                    Stackly connects artisans with people who value authentic craftsmanship.
-                    Every purchase preserves traditional skills, supports local communities,
-                    and celebrates handmade excellence across India.
-                </p>
+              <a href="error.html"><i class="fa-brands fa-instagram"></i></a>
 
-                <div class="social-links">
+              <a href="error.html"><i class="fa-brands fa-x-twitter"></i></a>
 
-                    <a href="error.html"><i class="fa-brands fa-facebook-f"></i></a>
-
-                    <a href="error.html"><i class="fa-brands fa-instagram"></i></a>
-
-                    <a href="error.html"><i class="fa-brands fa-x-twitter"></i></a>
-
-                    <a href="error.html"><i class="fa-brands fa-linkedin-in"></i></a>
-
-                </div>
-
+              <a href="error.html"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
+          </div>
 
-            <!-- Explore -->
+          <!-- Explore -->
 
-            <div class="footer-column">
+          <div class="footer-column">
+            <h4>Explore</h4>
 
-                <h4>Explore</h4>
+            <a href="index.html">Home</a>
 
-                <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
 
-                <a href="shop.html">Shop</a>
+            <a href="artisans.html">Artisans</a>
 
-                <a href="artisans.html">Artisans</a>
+            <a href="story.html">Our Story</a>
 
-                <a href="story.html">Our Story</a>
+            <a href="contact.html">Contact</a>
+          </div>
 
-                <a href="contact.html">Contact</a>
+          <!-- Categories -->
 
-            </div>
+          <div class="footer-column">
+            <h4>Collections</h4>
 
-            <!-- Categories -->
+            <a href="error.html">Pottery</a>
 
-            <div class="footer-column">
+            <a href="error.html">Textiles</a>
 
-                <h4>Collections</h4>
+            <a href="error.html">Wood Craft</a>
 
-                <a href="error.html">Pottery</a>
+            <a href="error.html">Metal Art</a>
 
-                <a href="error.html">Textiles</a>
+            <a href="error.html">Home Decor</a>
 
-                <a href="error.html">Wood Craft</a>
+            <a href="error.html">Jewellery</a>
+          </div>
 
-                <a href="error.html">Metal Art</a>
+          <!-- Customer -->
 
-                <a href="error.html">Home Decor</a>
+          <div class="footer-column">
+            <h4>Customer Care</h4>
 
-                <a href="error.html">Jewellery</a>
+            <a href="error.html">Track Order</a>
 
-            </div>
+            <a href="error.html">Shipping</a>
 
-            <!-- Customer -->
+            <a href="error.html">Returns</a>
 
-            <div class="footer-column">
+            <a href="error.html">FAQs</a>
 
-                <h4>Customer Care</h4>
+            <a href="error.html">Privacy Policy</a>
 
-                <a href="error.html">Track Order</a>
+            <a href="error.html">Terms & Conditions</a>
+          </div>
 
-                <a href="error.html">Shipping</a>
+          <!-- Contact -->
 
-                <a href="error.html">Returns</a>
+          <div class="footer-column">
+            <h4>Contact</h4>
 
-                <a href="error.html">FAQs</a>
+            <p>📍 Salem, Tamil Nadu, India</p>
 
-                <a href="error.html">Privacy Policy</a>
+            <p>📞 +91 98765 43210</p>
 
-                <a href="error.html">Terms & Conditions</a>
+            <p>✉ hello@stackly.com</p>
 
-            </div>
+            <p>Mon – Sat</p>
 
-            <!-- Contact -->
-
-            <div class="footer-column">
-
-                <h4>Contact</h4>
-
-                <p>📍 Salem, Tamil Nadu, India</p>
-
-                <p>📞 +91 98765 43210</p>
-
-                <p>✉ hello@stackly.com</p>
-
-                <p>Mon – Sat</p>
-
-                <p>9:00 AM – 6:00 PM</p>
-
-            </div>
-
+            <p>9:00 AM – 6:00 PM</p>
+          </div>
         </div>
 
         <!-- Newsletter -->
 
         <div class="footer-newsletter">
+          <div>
+            <h3>Stay Connected</h3>
 
-            <div>
+            <p>
+              Receive handcrafted collections, artisan stories, and exclusive
+              launches every month.
+            </p>
+          </div>
 
-                <h3>Stay Connected</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" />
 
-                <p>
-                    Receive handcrafted collections, artisan stories,
-                    and exclusive launches every month.
-                </p>
-
-            </div>
-
-            <form>
-
-                <input
-                    type="email"
-                    placeholder="Enter your email">
-
-                <button>
-
-                    Subscribe
-
-                </button>
-
-            </form>
-
+            <button>Subscribe</button>
+          </form>
         </div>
 
         <!-- Bottom -->
 
         <div class="footer-bottom">
+          <p>
+            © 2026 Stackly. Crafted with ❤️ to celebrate handmade traditions.
+          </p>
 
-            <p>
+          <div>
+            <a href="error.html">Privacy</a>
 
-                © 2026 Stackly. Crafted with ❤️ to celebrate handmade traditions.
+            <a href="error.html">Terms</a>
 
-            </p>
+            <a href="error.html">Cookies</a>
 
-            <div>
-
-                <a href="error.html">Privacy</a>
-
-                <a href="error.html">Terms</a>
-
-                <a href="error.html">Cookies</a>
-
-                <a href="error.html">Accessibility</a>
-
-            </div>
-
+            <a href="error.html">Accessibility</a>
+          </div>
         </div>
+      </div>
+    </footer>
 
-    </div>
-
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

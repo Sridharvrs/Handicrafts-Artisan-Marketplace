@@ -34,7 +34,7 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
   content:"";position:absolute;top:0;right:-1px;width:2px;height:100%;
   background:repeating-linear-gradient(0deg,transparent 0 8px,rgba(179,102,62,.22) 8px 12px);
 }
-.bside-top{display:flex;align-items:center;gap:14px}
+/* .bside-top{display:flex;align-items:center;gap:14px} */
 .bmark{
   width:52px;height:52px;border-radius:16px;
   background:var(--ink);color:var(--cream);
@@ -966,7 +966,7 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
   border-radius: 10px
 }
 
-.bside-top{
+/* .bside-top{
 
     display:flex;
 
@@ -976,7 +976,7 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
 
     margin-bottom:35px;
 
-}
+} */
 
 .buyer-logo{
 

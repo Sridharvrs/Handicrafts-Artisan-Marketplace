@@ -271,7 +271,7 @@
 
             <div>
                 <span>Email</span>
-                <strong>hello@karigar.com</strong>
+                <strong>hello@Stackly.com</strong>
             </div>
 
             <div>
@@ -299,7 +299,7 @@
         <div class="hero-circle">
 
             <img
-                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200&auto=format&fit=crop"
+                src="images/contact-1.webp"
                 alt="Artisan">
 
         </div>
@@ -352,7 +352,7 @@
 
             <span>Email</span>
 
-            <h3>hello@karigar.com</h3>
+            <h3>hello@Stackly.com</h3>
 
             <p>Replies within 24 hours.</p>
 
@@ -405,7 +405,7 @@
       <div>
         <span class="eyebrow" style="color:var(--gold)">Say hello</span>
         <h1 style="margin-top:20px">Write to <em>us</em>.<br/>We write back.</h1>
-        <p>Whether you're a maker who'd like to join the collective, a customer with a question, or a journalist looking for a story — we read every message.</p>
+        <!-- <p>Whether you're a maker who'd like to join the collective, a customer with a question, or a journalist looking for a story — we read every message.</p> -->
       </div>
 
       <div class="contact__info">
@@ -421,24 +421,167 @@
       <p>We reply within one working day. Promise.</p>
 
       <form id="contact-form">
-        <div class="form-row">
-          <div class="field"><label>Your name</label><input type="text" required placeholder="Amara Diallo" /></div>
-          <div class="field"><label>Email</label><input type="email" required placeholder="you@studio.com" /></div>
-        </div>
+
+    <div class="form-row">
+
         <div class="field">
-          <label>I am a…</label>
-          <select>
-            <option>A curious customer</option>
-            <option>An artisan applying to join</option>
-            <option>Press or media</option>
-            <option>Something else</option>
-          </select>
+            <label>Your name</label>
+            <input
+                type="text"
+                oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')"
+                required
+                placeholder="Amara Diallo">
         </div>
-        <div class="field"><label>Your message</label><textarea required placeholder="Say hello…"></textarea></div>
-        <button type="submit">Send message <i>→</i> </button>
-      </form>
+
+        <div class="field">
+            <label>Email</label>
+            <input
+                type="email"
+                required
+                placeholder="you@studio.com">
+        </div>
+
+    </div>
+
+    <!-- Contact Number -->
+
+    <div class="field">
+
+        <label>Contact Number</label>
+
+        <input
+            type="tel"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+            placeholder="+91 9876543210"
+            required>
+
+    </div>
+
+    <div class="field">
+
+        <label>I am a…</label>
+
+        <select>
+
+            <option>A curious customer</option>
+
+            <option>An artisan applying to join</option>
+
+            <option>Press or media</option>
+
+            <option>Something else</option>
+
+        </select>
+
+    </div>
+
+    <div class="field">
+
+        <label>Your message</label>
+
+        <textarea
+            required
+            placeholder="Say hello…"></textarea>
+
+    </div>
+
+    <button type="submit">
+        Send message <i>→</i>
+    </button>
+
+</form>
     </div>
   </section>
+
+<!-- section-3 -->
+<!--=================================
+        STACKLY HEADQUARTERS
+==================================-->
+
+<section class="hq">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Visit Us
+        </span>
+
+        <h2>
+            Stackly Headquarters
+        </h2>
+
+        <p>
+            We'd love to meet you. Visit our headquarters to discover
+            handcrafted collections, connect with artisans, and experience
+            the story behind every creation.
+        </p>
+
+        <div class="hq-details">
+
+            <div class="hq-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+
+                    <h4>Address</h4>
+
+                    <p>
+                        Stackly Headquarters<br>
+                        Coimbatore<br>
+                        
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="hq-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+
+                    <h4>Phone</h4>
+
+                    <p>+91 98765 43210</p>
+
+                </div>
+
+            </div>
+
+            <div class="hq-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+
+                    <h4>Email</h4>
+
+                    <p>hello@stackly.com</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="map-wrapper">
+
+            <iframe
+                src="https://www.google.com/maps?q=coimbatore%20West,%20coimbatore&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- section-4 -->
 <section class="studio section wrap">
@@ -472,8 +615,8 @@
 
         <div class="studio-image">
 
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1600&auto=format&fit=crop"
-                 alt="Karigar Studio">
+            <img src="images/contact-2.webp"
+                 alt="Stackly Studio">
 
             <div class="studio-badge">
 
@@ -494,7 +637,7 @@
             </span>
 
             <h3>
-                Karigar Design Studio
+                Stackly Design Studio
             </h3>
 
             <p>
@@ -517,7 +660,7 @@
 
                 <div>
                     <strong>✉ Email</strong>
-                    <span>hello@karigar.com</span>
+                    <span>hello@Stackly.com</span>
                 </div>
 
             </div>
@@ -546,9 +689,11 @@
 
             <div class="footer-brand">
 
-                <img src="images/logo.webp"
+                <a href="index.html">
+                    <img src="images/logo1.webp"
                      alt="Stackly Logo"
                      class="footer-logo">
+                </a>
 
                 <p class="footer-text">
                     Stackly connects artisans with people who value authentic craftsmanship.

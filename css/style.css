@@ -932,6 +932,7 @@ body.menu-open{
     border:1px solid rgba(255,255,255,.08);
     border-radius:50%;
     color:#EDE6DB;
+    background: #3d3f42;
     text-decoration:none;
     transition:.35s;
 }

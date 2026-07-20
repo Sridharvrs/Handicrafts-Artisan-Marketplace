@@ -1133,3 +1133,11 @@
 }
 
 }
+
+.section{
+    padding-top: 0;
+}
+
+.marquee{
+    margin-bottom: 50px;
+}
