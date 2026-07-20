@@ -26,12 +26,9 @@ function activateView(key){
     );
 
     // Close sidebar on mobile
-    if(window.innerWidth <= 900){
-
-        sidebar.classList.remove("active");
-        overlay.classList.remove("active");
-
-    }
+    if (window.innerWidth <= 900) {
+    closeSidebar();
+}
 
     window.scrollTo({
         top:0,
@@ -139,29 +136,45 @@ document.querySelectorAll('.tile').forEach((el,i)=>{
 console.log('%cKarigar° Buyer Console','background:#b3663e;color:#f5efe3;padding:6px 14px;border-radius:999px;font-family:monospace');
 
 // ===============================
+
 const menuToggle = document.getElementById("menuToggle");
 const sidebar = document.querySelector(".bside");
 const overlay = document.querySelector(".sidebar-overlay");
 
-menuToggle.addEventListener("click", () => {
+let scrollPosition = 0;
+
+function openSidebar() {
+
+    scrollPosition = window.scrollY;
 
     sidebar.classList.add("active");
     overlay.classList.add("active");
 
-    document.body.classList.add("no-scroll");
-    document.documentElement.classList.add("no-scroll");
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = "100%";
+}
 
-});
-
-function closeSidebar(){
+function closeSidebar() {
 
     sidebar.classList.remove("active");
     overlay.classList.remove("active");
 
-    document.body.classList.remove("no-scroll");
-    document.documentElement.classList.remove("no-scroll");
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.width = "";
 
+    window.scrollTo(0, scrollPosition);
 }
 
+menuToggle.addEventListener("click", openSidebar);
+
 overlay.addEventListener("click", closeSidebar);
-document.getElementById("closeSidebar")?.addEventListener("click", closeSidebar);
+
+document.querySelectorAll(".bnav a").forEach(link => {
+    link.addEventListener("click", () => {
+        if (window.innerWidth <= 900) {
+            closeSidebar();
+        }
+    });
+});
