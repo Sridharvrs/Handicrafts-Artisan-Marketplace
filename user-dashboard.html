@@ -1,386 +1,1009 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Buyer Dashboard — Stackly</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/user.css" />
-</head>
-<body class="buyer-body">
-
-<div class="bshell">
-
-
-  <!-- CREAM SIDEBAR -->
-  <aside class="bside">
-    <!-- <button class="close-sidebar" id="closeSidebar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Buyer Dashboard — Stackly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/user.css" />
+  </head>
+  <body class="buyer-body">
+    <div class="bshell">
+      <!-- CREAM SIDEBAR -->
+      <aside class="bside">
+        <!-- <button class="close-sidebar" id="closeSidebar">
     Close
 </button> -->
-    <div class="bside-top">
-    <a href="user-dashboard.html">
-        <img src="images/logo1.webp"
-             alt="Stackly"
-             class="buyer-logo">
-    </a>
-</div>
-
-    <div class="me-card">
-      <div class="me-av">U</div>
-      <div>
-        <p class="me-name">User</p>
-        <!-- <small>Bengaluru · member since '24</small> -->
-      </div>
-    </div>
-
-    <nav class="bnav">
-      <p class="nav-heading">Browse</p>
-      <a class="active" data-view="home"><i class="i-dot"></i> Overview <em class="tick">●</em></a>
-      <a data-view="orders"><i class="i-dot"></i> Orders <em class="pill-num">3</em></a>
-      <a data-view="wish"><i class="i-dot"></i> Wishlist <em class="pill-num">8</em></a>
-      <a data-view="map"><i class="i-dot"></i> Craft map</a>
-
-      <p class="nav-heading">Connect</p>
-      <a data-view="msgs"><i class="i-dot"></i> Messages <em class="pill-num hot">2</em></a>
-      <a data-view="impact"><i class="i-dot"></i> Your impact</a>
-      <a data-view="wallet"><i class="i-dot"></i> Wallet</a>
-      <a data-view="settings"><i class="i-dot"></i> Settings</a>
-    </nav>
-
-    <div class="bside-bot">
-      <div class="wallet-mini">
-        <span class="wk">Stackly credits</span>
-        <span class="wv">₹ 2,480</span>
-        <div class="wbar"><span style="width:62%"></span></div>
-        <small>₹ 1,520 to next reward tier</small>
-      </div>
-      <a href="index.html" class="swap-btn">⇌ Logout</a>
-    </div>
-  </aside>
-
-  <div class="sidebar-overlay"></div>
-
-  <!-- MAIN -->
-  <main class="bmain">
-
-    <header class="btop">
-
-    <div class="top-left">
-
-        <button class="menu-toggle" id="menuToggle">
-            ☰
-        </button>
-
-        <div class="search">
-            <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input type="text" placeholder="Search products, artisans...">
-            <kbd>⌘K</kbd>
+        <div class="bside-top">
+          <a href="user-dashboard.html">
+            <img src="images/logo1.webp" alt="Stackly" class="buyer-logo" />
+          </a>
         </div>
 
-    </div>
+        <div class="me-card">
+          <div class="me-av">U</div>
+          <div>
+            <p class="me-name">User</p>
+            <!-- <small>Bengaluru · member since '24</small> -->
+          </div>
+        </div>
 
-    <div class="top-right">
+        <nav class="bnav">
+          <p class="nav-heading">Browse</p>
+          <a class="active" data-view="home"
+            ><i class="i-dot"></i> Overview <em class="tick">●</em></a
+          >
+          <a data-view="orders"
+            ><i class="i-dot"></i> Orders <em class="pill-num">3</em></a
+          >
+          <a data-view="wish"
+            ><i class="i-dot"></i> Wishlist <em class="pill-num">8</em></a
+          >
+          <a data-view="map"><i class="i-dot"></i> Craft map</a>
 
-        <!-- <button class="icon-btn">
+          <p class="nav-heading">Connect</p>
+          <a data-view="msgs"
+            ><i class="i-dot"></i> Messages <em class="pill-num hot">2</em></a
+          >
+          <a data-view="impact"><i class="i-dot"></i> Your impact</a>
+          <a data-view="wallet"><i class="i-dot"></i> Wallet</a>
+          <a data-view="settings"><i class="i-dot"></i> Settings</a>
+        </nav>
+
+        <div class="bside-bot">
+          <div class="wallet-mini">
+            <span class="wk">Stackly credits</span>
+            <span class="wv">₹ 2,480</span>
+            <div class="wbar"><span style="width: 62%"></span></div>
+            <small>₹ 1,520 to next reward tier</small>
+          </div>
+          <a href="index.html" class="swap-btn">⇌ Logout</a>
+        </div>
+      </aside>
+
+      <div class="sidebar-overlay"></div>
+
+      <!-- MAIN -->
+      <main class="bmain">
+        <header class="btop">
+          <div class="top-left">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <div class="search">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input type="text" placeholder="Search products, artisans..." />
+              <kbd>⌘K</kbd>
+            </div>
+          </div>
+
+          <div class="top-right">
+            <!-- <button class="icon-btn">
             <i class="fa-regular fa-bell"></i>
             <span class="ping"></span>
         </button> -->
 
-        <button class="icon-btn">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <em>2</em>
-        </button>
+            <button class="icon-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <em>2</em>
+            </button>
 
-        <div class="profile-box">
+            <div class="profile-box">
+              <img src="images/team1.webp" alt="Profile" class="profile-img" />
 
-            <img src="images/team1.webp"
-                 alt="Profile"
-                 class="profile-img">
-
-            <div class="profile-info">
-
+              <div class="profile-info">
                 <h4>login</h4>
 
                 <span>credentials</span>
+              </div>
 
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </header>
+
+        <!-- ═══════════════════════ VIEW: HOME / OVERVIEW ═══════════════════════ -->
+        <section class="view on" data-panel="home">
+          <section class="welcome-strip">
+            <div class="welcome-left">
+              <span class="welcome-tag"> Welcome Back </span>
+
+              <h2>
+                Hello,
+                <span id="userName">Test</span> 👋
+              </h2>
+
+              <p>
+                Great to see you again. Discover handcrafted treasures, track
+                your orders, and support talented artisans.
+              </p>
             </div>
 
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="welcome-right">
+              <div class="welcome-badge">
+                <span>Today's Journey</span>
+                <strong>Explore New Crafts</strong>
+              </div>
+            </div>
+          </section>
+          <div class="hello-strip">
+            <div>
+              <p class="eyebrow">
+                Namaste, Ananya <span class="wave">〰</span>
+              </p>
+              <h1>
+                You've supported <span class="hl">12 artisans</span><br />across
+                <span class="hl">7 craft villages</span> this year.
+              </h1>
+            </div>
+            <div class="hello-cards">
+              <div class="mini-card">
+                <span class="mk">Wallet</span><span class="mv">₹ 2,480</span
+                ><span class="ms">Stackly credits</span>
+              </div>
+              <div class="mini-card dark">
+                <span class="mk">Impact</span><span class="mv">₹ 34,120</span
+                ><span class="ms">paid directly to makers</span>
+              </div>
+            </div>
+          </div>
 
-        </div>
+          <div class="asym-grid">
+            <article class="tile tile-orders">
+              <div class="tile-head">
+                <h2>Orders in motion</h2>
+                <a class="ghost" data-jump="orders">All orders →</a>
+              </div>
+              <ul class="order-track">
+                <li>
+                  <div class="thumb" style="background: #c47a52"></div>
+                  <div class="oinfo">
+                    <p class="pname">Terracotta water jug — Molela</p>
+                    <p class="pmeta">by Nathulal Ji · Order #KG-2810</p>
+                    <div class="tracker">
+                      <span class="step done">Packed</span
+                      ><span class="step done">In transit</span
+                      ><span class="step now">Out for delivery</span
+                      ><span class="step">Delivered</span>
+                    </div>
+                  </div>
+                  <span class="eta">Tomorrow</span>
+                </li>
+                <li>
+                  <div class="thumb" style="background: #4a5d3f"></div>
+                  <div class="oinfo">
+                    <p class="pname">Indigo Ajrakh stole — Kachchh</p>
+                    <p class="pmeta">by Sufiyan Khatri · Order #KG-2807</p>
+                    <div class="tracker">
+                      <span class="step done">Packed</span
+                      ><span class="step now">In transit</span
+                      ><span class="step">Out for delivery</span
+                      ><span class="step">Delivered</span>
+                    </div>
+                  </div>
+                  <span class="eta">Sat, 20 Jul</span>
+                </li>
+                <li>
+                  <div class="thumb" style="background: #8a6e4b"></div>
+                  <div class="oinfo">
+                    <p class="pname">Bidri jewellery box — Bidar</p>
+                    <p class="pmeta">by Rasheed Bhai · Order #KG-2799</p>
+                    <div class="tracker">
+                      <span class="step now">Packed</span
+                      ><span class="step">In transit</span
+                      ><span class="step">Out for delivery</span
+                      ><span class="step">Delivered</span>
+                    </div>
+                  </div>
+                  <span class="eta">Mon, 22 Jul</span>
+                </li>
+              </ul>
+            </article>
 
+            <article class="tile tile-map">
+              <h2>Your craft map</h2>
+              <p class="sub">Where your rupees traveled.</p>
+              <div class="india-map">
+                <svg viewBox="0 0 200 220" aria-hidden="true">
+                  <path
+                    d="M100 10 C60 40 40 80 45 130 C50 180 90 210 110 205 C150 200 170 150 165 100 C160 55 140 20 100 10 Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-dasharray="3 4"
+                  />
+                </svg>
+                <span class="pin" style="top: 22%; left: 28%">Kachchh</span>
+                <span class="pin" style="top: 36%; left: 44%">Molela</span>
+                <span class="pin" style="top: 55%; left: 56%">Bidar</span>
+                <span class="pin" style="top: 70%; left: 38%">Channapatna</span>
+                <span class="pin" style="top: 44%; left: 66%">Pochampally</span>
+              </div>
+            </article>
+
+            <article class="tile tile-quote">
+              <p class="qmark">"</p>
+              <p class="qtext">
+                Every piece you buy keeps a loom running, a wheel turning, a
+                fire burning.
+              </p>
+              <p class="qby">— Stackly promise</p>
+            </article>
+
+            <article class="tile tile-recos">
+              <div class="tile-head">
+                <h2>Because you love earthy tones</h2>
+                <div class="chips">
+                  <span class="chip on">All</span
+                  ><span class="chip">Pottery</span
+                  ><span class="chip">Textile</span
+                  ><span class="chip">Wood</span>
+                </div>
+              </div>
+              <div class="reco-row" id="recoRow">
+                <div class="r-card">
+                  <div class="r-img" style="background: #b3663e"></div>
+                  <p>Longpi black pottery bowl</p>
+                  <small>₹ 1,120</small>
+                </div>
+                <div class="r-card">
+                  <div class="r-img" style="background: #3d4b34"></div>
+                  <p>Handspun khadi throw</p>
+                  <small>₹ 2,450</small>
+                </div>
+                <div class="r-card">
+                  <div class="r-img" style="background: #8f5a2c"></div>
+                  <p>Sheesham cheese board</p>
+                  <small>₹ 980</small>
+                </div>
+                <div class="r-card">
+                  <div class="r-img" style="background: #c9a26b"></div>
+                  <p>Wheat-straw basket</p>
+                  <small>₹ 540</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: ORDERS ═══════════════════════ -->
+        <section class="view" data-panel="orders">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 02</p>
+              <h1>All orders</h1>
+              <p class="page-sub">
+                Every piece you've commissioned — packed by hand, tracked by
+                rail, road & river.
+              </p>
+            </div>
+            <div class="head-stats">
+              <div class="hs"><span>28</span><small>total</small></div>
+              <div class="hs hs-accent">
+                <span>3</span><small>in motion</small>
+              </div>
+              <div class="hs"><span>25</span><small>delivered</small></div>
+            </div>
+          </div>
+
+          <div class="ord-toolbar">
+            <div class="segs">
+              <span class="seg on">All</span><span class="seg">In transit</span
+              ><span class="seg">Delivered</span
+              ><span class="seg">Returned</span>
+            </div>
+            <div class="ord-search">
+              <input placeholder="Search by order # or artisan…" />
+            </div>
+          </div>
+
+          <div class="order-table">
+            <div class="ot-row ot-head">
+              <span>Order</span><span>Piece</span><span>Artisan</span
+              ><span>Stage</span><span>Amount</span><span></span>
+            </div>
+            <div class="ot-row">
+              <span class="mono">#KG-2810</span
+              ><span><b>Terracotta jug</b><small>Molela clay</small></span
+              ><span>Nathulal Ji</span
+              ><span><em class="stg now">Out for delivery</em></span
+              ><span class="mono">₹ 1,240</span
+              ><span
+                ><button
+                  class="tiny"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Track
+                </button></span
+              >
+            </div>
+            <div class="ot-row">
+              <span class="mono">#KG-2807</span
+              ><span><b>Ajrakh stole</b><small>indigo · 9 dips</small></span
+              ><span>Sufiyan Khatri</span
+              ><span><em class="stg tr">In transit</em></span
+              ><span class="mono">₹ 3,850</span
+              ><span
+                ><button
+                  class="tiny"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Track
+                </button></span
+              >
+            </div>
+            <div class="ot-row">
+              <span class="mono">#KG-2799</span
+              ><span><b>Bidri box</b><small>silver inlay</small></span
+              ><span>Rasheed Bhai</span
+              ><span><em class="stg pk">Packed</em></span
+              ><span class="mono">₹ 4,720</span
+              ><span
+                ><button
+                  class="tiny"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Track
+                </button></span
+              >
+            </div>
+            <div class="ot-row done">
+              <span class="mono">#KG-2760</span
+              ><span
+                ><b>Channapatna toy set</b><small>lacquered wood</small></span
+              ><span>Bhagyamma</span
+              ><span><em class="stg dl">Delivered</em></span
+              ><span class="mono">₹ 690</span
+              ><span
+                ><button
+                  class="tiny ghost-btn"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Review
+                </button></span
+              >
+            </div>
+            <div class="ot-row done">
+              <span class="mono">#KG-2731</span
+              ><span><b>Pochampally saree</b><small>silk ikat</small></span
+              ><span>Lakshmi Devi</span
+              ><span><em class="stg dl">Delivered</em></span
+              ><span class="mono">₹ 8,400</span
+              ><span
+                ><button
+                  class="tiny ghost-btn"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Review
+                </button></span
+              >
+            </div>
+            <div class="ot-row done">
+              <span class="mono">#KG-2698</span
+              ><span><b>Longpi bowl set</b><small>Manipur pottery</small></span
+              ><span>Machunga</span
+              ><span><em class="stg dl">Delivered</em></span
+              ><span class="mono">₹ 2,120</span
+              ><span
+                ><button
+                  class="tiny ghost-btn"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Review
+                </button></span
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: WISHLIST ═══════════════════════ -->
+        <section class="view" data-panel="wish">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 03</p>
+              <h1>Your wishlist</h1>
+              <p class="page-sub">
+                Pieces you've bookmarked. Move them to your cart when you're
+                ready.
+              </p>
+            </div>
+            <div class="wish-total">
+              <span>8 pieces</span><b>₹ 18,240</b><small>total value</small>
+            </div>
+          </div>
+
+          <div class="wish-grid">
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #9c3a2b, #c47a52)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Kalamkari wall scroll</p>
+                <small>Srikalahasti · natural dye</small>
+                <div class="wg-foot">
+                  <b>₹ 3,200</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #1f3d2a, #4a5d3f)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Channapatna spinning top</p>
+                <small>Karnataka · lacquered</small>
+                <div class="wg-foot">
+                  <b>₹ 690</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #d9a441, #b3663e)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Brass diya — Nachiarkoil</p>
+                <small>Tamil Nadu · hand cast</small>
+                <div class="wg-foot">
+                  <b>₹ 1,450</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #4a6fa5, #1e3a5f)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Indigo bandhani dupatta</p>
+                <small>Kutch · 1200 knots</small>
+                <div class="wg-foot">
+                  <b>₹ 4,200</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #8f5a2c, #5b3a1e)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Sheesham carving tray</p>
+                <small>Saharanpur · rosewood</small>
+                <div class="wg-foot">
+                  <b>₹ 2,800</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #c9a26b, #8a6e4b)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Assam bamboo lamp</p>
+                <small>Sualkuchi · woven shade</small>
+                <div class="wg-foot">
+                  <b>₹ 1,680</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #6b8a5b, #3d4b34)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Khadi handloom throw</p>
+                <small>Ponduru · handspun</small>
+                <div class="wg-foot">
+                  <b>₹ 2,450</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wg-card">
+              <div
+                class="wg-img"
+                style="background: linear-gradient(135deg, #c94a3a, #8a4a2b)"
+              ></div>
+              <div class="wg-body">
+                <p class="wg-name">Warli painted planter</p>
+                <small>Palghar · terracotta</small>
+                <div class="wg-foot">
+                  <b>₹ 1,350</b
+                  ><button
+                    class="tiny"
+                    onclick="window.location.href = 'dashboarderror.html'"
+                  >
+                    Move ↗
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: CRAFT MAP ═══════════════════════ -->
+        <section class="view" data-panel="map">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 04</p>
+              <h1>Craft map of India</h1>
+              <p class="page-sub">
+                7 villages · 12 artisans · 28 pieces travelled home to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="map-split">
+            <div class="map-big">
+              <svg viewBox="0 0 200 220">
+                <path
+                  d="M100 10 C60 40 40 80 45 130 C50 180 90 210 110 205 C150 200 170 150 165 100 C160 55 140 20 100 10 Z"
+                  fill="none"
+                  stroke="#b3663e"
+                  stroke-width="1.2"
+                  stroke-dasharray="3 4"
+                />
+              </svg>
+              <span class="mpin" style="top: 20%; left: 24%"
+                >Kachchh<b>4</b></span
+              >
+              <span class="mpin" style="top: 34%; left: 40%"
+                >Molela<b>3</b></span
+              >
+              <span class="mpin" style="top: 38%; left: 64%"
+                >Pochampally<b>2</b></span
+              >
+              <span class="mpin" style="top: 52%; left: 56%"
+                >Bidar<b>5</b></span
+              >
+              <span class="mpin" style="top: 65%; left: 38%"
+                >Channapatna<b>6</b></span
+              >
+              <span class="mpin" style="top: 70%; left: 60%"
+                >Srikalahasti<b>3</b></span
+              >
+              <span class="mpin" style="top: 28%; left: 78%"
+                >Sualkuchi<b>2</b></span
+              >
+            </div>
+            <div class="map-list">
+              <h3>Villages you've supported</h3>
+              <div class="vill">
+                <span class="vsw" style="background: #4a6fa5"></span>
+                <div>
+                  <b>Kachchh, Gujarat</b
+                  ><small>Ajrakh block printing · indigo</small>
+                </div>
+                <em>4 orders</em>
+              </div>
+              <div class="vill">
+                <span class="vsw" style="background: #b3663e"></span>
+                <div>
+                  <b>Molela, Rajasthan</b><small>Terracotta relief tiles</small>
+                </div>
+                <em>3 orders</em>
+              </div>
+              <div class="vill">
+                <span class="vsw" style="background: #c9a26b"></span>
+                <div>
+                  <b>Pochampally, Telangana</b><small>Silk ikat weaving</small>
+                </div>
+                <em>2 orders</em>
+              </div>
+              <div class="vill">
+                <span class="vsw" style="background: #5b3a1e"></span>
+                <div>
+                  <b>Bidar, Karnataka</b><small>Bidri silver inlay</small>
+                </div>
+                <em>5 orders</em>
+              </div>
+              <div class="vill">
+                <span class="vsw" style="background: #c94a3a"></span>
+                <div><b>Channapatna</b><small>Lacquered wood toys</small></div>
+                <em>6 orders</em>
+              </div>
+              <div class="vill">
+                <span class="vsw" style="background: #8f5a2c"></span>
+                <div><b>Srikalahasti</b><small>Kalamkari painting</small></div>
+                <em>3 orders</em>
+              </div>
+              <div class="vill">
+                <span class="vsw" style="background: #6b8a5b"></span>
+                <div>
+                  <b>Sualkuchi, Assam</b><small>Bamboo & muga silk</small>
+                </div>
+                <em>2 orders</em>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: MESSAGES ═══════════════════════ -->
+        <section class="view" data-panel="msgs">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 05</p>
+              <h1>Messages from your makers</h1>
+              <p class="page-sub">
+                Direct notes from the hands that made your pieces.
+              </p>
+            </div>
+          </div>
+
+          <div class="chat-split">
+            <div class="thread-list">
+              <div class="thread active">
+                <div class="tv" style="background: #c47a52">N</div>
+                <div>
+                  <b>Nathulal Ji</b><small>"Your jug fired well…"</small>
+                </div>
+                <em>2h</em>
+              </div>
+              <div class="thread">
+                <div class="tv" style="background: #4a5d3f">S</div>
+                <div>
+                  <b>Sufiyan Khatri</b><small>"Indigo vat was ready…"</small>
+                </div>
+                <em>1d</em>
+              </div>
+              <div class="thread">
+                <div class="tv" style="background: #8a6e4b">R</div>
+                <div>
+                  <b>Rasheed Bhai</b><small>"Silver inlay complete"</small>
+                </div>
+                <em>2d</em>
+              </div>
+              <div class="thread">
+                <div class="tv" style="background: #4a6fa5">L</div>
+                <div>
+                  <b>Lakshmi Devi</b><small>"Loom ready for the next…"</small>
+                </div>
+                <em>5d</em>
+              </div>
+              <div class="thread">
+                <div class="tv" style="background: #6b8a5b">M</div>
+                <div><b>Machunga</b><small>"Kiln firing tomorrow"</small></div>
+                <em>1w</em>
+              </div>
+            </div>
+
+            <div class="thread-open">
+              <div class="thread-head">
+                <div class="tv big" style="background: #c47a52">N</div>
+                <div>
+                  <b>Nathulal Ji</b
+                  ><small>Molela · potter · 34 years at the wheel</small>
+                </div>
+                <a class="ghost">View maker →</a>
+              </div>
+              <div class="chat-log">
+                <div class="cb in">
+                  <p>
+                    Namaste Ananya ji. Your jug fired well in the second kiln.
+                    Sending a small clay bell as thanks 🙏
+                  </p>
+                  <small>Nathulal · 10:20</small>
+                </div>
+                <div class="cb out">
+                  <p>
+                    Thank you so much! Excited to see it. When does it ship?
+                  </p>
+                  <small>You · 10:31</small>
+                </div>
+                <div class="cb in">
+                  <p>
+                    Tomorrow morning by the Rajasthan Roadways parcel service.
+                    Should reach in 4 days.
+                  </p>
+                  <small>Nathulal · 10:34</small>
+                </div>
+                <div class="cb in">
+                  <p>
+                    I've also added a note about the clay — please let it dry 24
+                    hours before use.
+                  </p>
+                  <small>Nathulal · 10:35</small>
+                </div>
+              </div>
+              <div class="chat-compose">
+                <input placeholder="Write to Nathulal Ji…" /><button
+                  class="tiny"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: IMPACT ═══════════════════════ -->
+        <section class="view" data-panel="impact">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 06</p>
+              <h1>Your impact story</h1>
+              <p class="page-sub">
+                What your purchases meant to the workshops on the other side.
+              </p>
+            </div>
+          </div>
+
+          <div class="impact-grid">
+            <div class="imp-big">
+              <p class="imp-num">₹ 34,120</p>
+              <p class="imp-lbl">paid <b>directly</b> to makers this year</p>
+              <div class="imp-bar"><span style="width: 78%"></span></div>
+              <small
+                >78% of your total spend reached the artisan (industry avg:
+                12%)</small
+              >
+            </div>
+            <div class="imp-card">
+              <span class="ic-num">12</span
+              ><span class="ic-lbl">artisans supported</span>
+            </div>
+            <div class="imp-card">
+              <span class="ic-num">7</span
+              ><span class="ic-lbl">craft villages</span>
+            </div>
+            <div class="imp-card">
+              <span class="ic-num">28</span
+              ><span class="ic-lbl">pieces commissioned</span>
+            </div>
+            <div class="imp-card dark">
+              <span class="ic-num">142</span
+              ><span class="ic-lbl">days of workshop income funded</span>
+            </div>
+
+            <div class="imp-story">
+              <h3>Stories powered by you</h3>
+              <div class="istory">
+                <span class="dot-g"></span>
+                <div>
+                  <b>Nathulal Ji</b> bought a new potter's wheel<small
+                    >funded by 6 of your orders · Aug 2025</small
+                  >
+                </div>
+              </div>
+              <div class="istory">
+                <span class="dot-g"></span>
+                <div>
+                  <b>Sufiyan Khatri</b> trained his son in Ajrakh<small
+                    >your indigo orders subsidised the year</small
+                  >
+                </div>
+              </div>
+              <div class="istory">
+                <span class="dot-g"></span>
+                <div>
+                  <b>Bhagyamma</b> reopened her lacquer workshop<small
+                    >after your 6-piece toy commission</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: WALLET ═══════════════════════ -->
+        <section class="view" data-panel="wallet">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 07</p>
+              <h1>Stackly wallet</h1>
+              <p class="page-sub">
+                Credits earned by supporting artisans. Spend on any piece, any
+                time.
+              </p>
+            </div>
+          </div>
+
+          <div class="wallet-hero">
+            <div class="wcard-big">
+              <div class="wc-top">
+                <span>Stackly° credits</span><b>Silver tier</b>
+              </div>
+              <p class="wc-bal">₹ 2,480<em>.00</em></p>
+              <div class="wc-bar"><span style="width: 62%"></span></div>
+              <small
+                >Earn ₹ 1,520 more to unlock <b>Gold</b> — free shipping on all
+                orders.</small
+              >
+              <div class="wc-actions">
+                <button
+                  class="tiny"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  ＋ Add credits</button
+                ><button
+                  class="tiny ghost-btn"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Redeem
+                </button>
+              </div>
+            </div>
+            <div class="wc-tiers">
+              <div class="tier">
+                <b>Bronze</b><small>₹ 0 – 999</small><span>5% back</span>
+              </div>
+              <div class="tier on">
+                <b>Silver</b><small>₹ 1,000 – 3,999</small><span>8% back</span>
+              </div>
+              <div class="tier">
+                <b>Gold</b><small>₹ 4,000+</small><span>12% + free ship</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="txn-list">
+            <h3>Recent activity</h3>
+            <div class="txn">
+              <span class="txn-i up">＋</span>
+              <div><b>Credits earned</b><small>on order #KG-2807</small></div>
+              <span class="txn-amt up">+ ₹ 308</span>
+            </div>
+            <div class="txn">
+              <span class="txn-i dn">−</span>
+              <div>
+                <b>Redeemed on cart</b><small>Longpi bowl · 12 Jul</small>
+              </div>
+              <span class="txn-amt dn">− ₹ 200</span>
+            </div>
+            <div class="txn">
+              <span class="txn-i up">＋</span>
+              <div>
+                <b>Referral bonus</b><small>Riya joined via your link</small>
+              </div>
+              <span class="txn-amt up">+ ₹ 500</span>
+            </div>
+            <div class="txn">
+              <span class="txn-i up">＋</span>
+              <div><b>Credits earned</b><small>on order #KG-2799</small></div>
+              <span class="txn-amt up">+ ₹ 378</span>
+            </div>
+            <div class="txn">
+              <span class="txn-i dn">−</span>
+              <div>
+                <b>Redeemed on cart</b><small>Warli planter · 28 Jun</small>
+              </div>
+              <span class="txn-amt dn">− ₹ 150</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ VIEW: SETTINGS ═══════════════════════ -->
+        <section class="view" data-panel="settings">
+          <div class="page-head">
+            <div>
+              <p class="eyebrow">Module · 08</p>
+              <h1>Settings</h1>
+              <p class="page-sub">Tune your Stackly experience.</p>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            <div class="s-card">
+              <h3>Profile</h3>
+              <label>Full name<input value="Ananya Rao" /></label>
+              <label>Email<input value="ananya@Stackly.example" /></label>
+              <label>City<input value="Bengaluru" /></label>
+              <button
+                class="tiny"
+                onclick="window.location.href = 'dashboarderror.html'"
+              >
+                Save profile
+              </button>
+            </div>
+
+            <div class="s-card">
+              <h3>Delivery address</h3>
+              <label>Street<input value="12, Wind Chime Road" /></label>
+              <label>Area / PIN<input value="Indiranagar · 560038" /></label>
+              <button
+                class="tiny"
+                onclick="window.location.href = 'dashboarderror.html'"
+              >
+                Update address
+              </button>
+            </div>
+
+            <div class="s-card">
+              <h3>Preferences</h3>
+              <div class="toggle">
+                <span>Email updates from makers</span><i class="sw on"></i>
+              </div>
+              <div class="toggle">
+                <span>SMS shipping alerts</span><i class="sw on"></i>
+              </div>
+              <div class="toggle">
+                <span>Weekly craft-story digest</span><i class="sw"></i>
+              </div>
+              <div class="toggle">
+                <span>New arrivals from favourites</span><i class="sw on"></i>
+              </div>
+            </div>
+
+            <div class="s-card danger">
+              <h3>Account</h3>
+              <p class="s-note">
+                Log out of this browser or permanently delete your account.
+              </p>
+              <div class="s-actions">
+                <button
+                  class="tiny danger-btn"
+                  onclick="window.location.href = 'dashboarderror.html'"
+                >
+                  Delete account
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="foot">
+          <span>Stackly° buyer console</span>
+          <span>v 2.4 — handwoven interface</span>
+          <span>© 2026</span>
+        </footer>
+      </main>
     </div>
 
-</header>
+    <div id="toast" class="toast"></div>
+    <script src="js/user.js"></script>
 
-    <!-- ═══════════════════════ VIEW: HOME / OVERVIEW ═══════════════════════ -->
-    <section class="view on" data-panel="home">
-      <div class="hello-strip">
-        <div>
-          <p class="eyebrow">Namaste, Ananya <span class="wave">〰</span></p>
-          <h1>You've supported <span class="hl">12 artisans</span><br/>across <span class="hl">7 craft villages</span> this year.</h1>
-        </div>
-        <div class="hello-cards">
-          <div class="mini-card"><span class="mk">Wallet</span><span class="mv">₹ 2,480</span><span class="ms">Stackly credits</span></div>
-          <div class="mini-card dark"><span class="mk">Impact</span><span class="mv">₹ 34,120</span><span class="ms">paid directly to makers</span></div>
-        </div>
-      </div>
-
-      <div class="asym-grid">
-        <article class="tile tile-orders">
-          <div class="tile-head"><h2>Orders in motion</h2><a class="ghost" data-jump="orders">All orders →</a></div>
-          <ul class="order-track">
-            <li><div class="thumb" style="background:#c47a52"></div><div class="oinfo"><p class="pname">Terracotta water jug — Molela</p><p class="pmeta">by Nathulal Ji · Order #KG-2810</p><div class="tracker"><span class="step done">Packed</span><span class="step done">In transit</span><span class="step now">Out for delivery</span><span class="step">Delivered</span></div></div><span class="eta">Tomorrow</span></li>
-            <li><div class="thumb" style="background:#4a5d3f"></div><div class="oinfo"><p class="pname">Indigo Ajrakh stole — Kachchh</p><p class="pmeta">by Sufiyan Khatri · Order #KG-2807</p><div class="tracker"><span class="step done">Packed</span><span class="step now">In transit</span><span class="step">Out for delivery</span><span class="step">Delivered</span></div></div><span class="eta">Sat, 20 Jul</span></li>
-            <li><div class="thumb" style="background:#8a6e4b"></div><div class="oinfo"><p class="pname">Bidri jewellery box — Bidar</p><p class="pmeta">by Rasheed Bhai · Order #KG-2799</p><div class="tracker"><span class="step now">Packed</span><span class="step">In transit</span><span class="step">Out for delivery</span><span class="step">Delivered</span></div></div><span class="eta">Mon, 22 Jul</span></li>
-          </ul>
-        </article>
-
-        <article class="tile tile-map">
-          <h2>Your craft map</h2><p class="sub">Where your rupees traveled.</p>
-          <div class="india-map">
-            <svg viewBox="0 0 200 220" aria-hidden="true"><path d="M100 10 C60 40 40 80 45 130 C50 180 90 210 110 205 C150 200 170 150 165 100 C160 55 140 20 100 10 Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 4"/></svg>
-            <span class="pin" style="top:22%;left:28%">Kachchh</span>
-            <span class="pin" style="top:36%;left:44%">Molela</span>
-            <span class="pin" style="top:55%;left:56%">Bidar</span>
-            <span class="pin" style="top:70%;left:38%">Channapatna</span>
-            <span class="pin" style="top:44%;left:66%">Pochampally</span>
-          </div>
-        </article>
-
-        <article class="tile tile-quote">
-          <p class="qmark">"</p>
-          <p class="qtext">Every piece you buy keeps a loom running, a wheel turning, a fire burning.</p>
-          <p class="qby">— Stackly promise</p>
-        </article>
-
-        <article class="tile tile-recos">
-          <div class="tile-head"><h2>Because you love earthy tones</h2>
-            <div class="chips"><span class="chip on">All</span><span class="chip">Pottery</span><span class="chip">Textile</span><span class="chip">Wood</span></div>
-          </div>
-          <div class="reco-row" id="recoRow">
-            <div class="r-card"><div class="r-img" style="background:#b3663e"></div><p>Longpi black pottery bowl</p><small>₹ 1,120</small></div>
-            <div class="r-card"><div class="r-img" style="background:#3d4b34"></div><p>Handspun khadi throw</p><small>₹ 2,450</small></div>
-            <div class="r-card"><div class="r-img" style="background:#8f5a2c"></div><p>Sheesham cheese board</p><small>₹ 980</small></div>
-            <div class="r-card"><div class="r-img" style="background:#c9a26b"></div><p>Wheat-straw basket</p><small>₹ 540</small></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: ORDERS ═══════════════════════ -->
-    <section class="view" data-panel="orders">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 02</p><h1>All orders</h1><p class="page-sub">Every piece you've commissioned — packed by hand, tracked by rail, road & river.</p></div>
-        <div class="head-stats">
-          <div class="hs"><span>28</span><small>total</small></div>
-          <div class="hs hs-accent"><span>3</span><small>in motion</small></div>
-          <div class="hs"><span>25</span><small>delivered</small></div>
-        </div>
-      </div>
-
-      <div class="ord-toolbar">
-        <div class="segs"><span class="seg on">All</span><span class="seg">In transit</span><span class="seg">Delivered</span><span class="seg">Returned</span></div>
-        <div class="ord-search"><input placeholder="Search by order # or artisan…" /></div>
-      </div>
-
-      <div class="order-table">
-        <div class="ot-row ot-head"><span>Order</span><span>Piece</span><span>Artisan</span><span>Stage</span><span>Amount</span><span></span></div>
-        <div class="ot-row"><span class="mono">#KG-2810</span><span><b>Terracotta jug</b><small>Molela clay</small></span><span>Nathulal Ji</span><span><em class="stg now">Out for delivery</em></span><span class="mono">₹ 1,240</span><span><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Track</button></span></div>
-        <div class="ot-row"><span class="mono">#KG-2807</span><span><b>Ajrakh stole</b><small>indigo · 9 dips</small></span><span>Sufiyan Khatri</span><span><em class="stg tr">In transit</em></span><span class="mono">₹ 3,850</span><span><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Track</button></span></div>
-        <div class="ot-row"><span class="mono">#KG-2799</span><span><b>Bidri box</b><small>silver inlay</small></span><span>Rasheed Bhai</span><span><em class="stg pk">Packed</em></span><span class="mono">₹ 4,720</span><span><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Track</button></span></div>
-        <div class="ot-row done"><span class="mono">#KG-2760</span><span><b>Channapatna toy set</b><small>lacquered wood</small></span><span>Bhagyamma</span><span><em class="stg dl">Delivered</em></span><span class="mono">₹ 690</span><span><button class="tiny ghost-btn" onclick="window.location.href = 'dashboarderror.html'">Review</button></span></div>
-        <div class="ot-row done"><span class="mono">#KG-2731</span><span><b>Pochampally saree</b><small>silk ikat</small></span><span>Lakshmi Devi</span><span><em class="stg dl">Delivered</em></span><span class="mono">₹ 8,400</span><span><button class="tiny ghost-btn" onclick="window.location.href = 'dashboarderror.html'">Review</button></span></div>
-        <div class="ot-row done"><span class="mono">#KG-2698</span><span><b>Longpi bowl set</b><small>Manipur pottery</small></span><span>Machunga</span><span><em class="stg dl">Delivered</em></span><span class="mono">₹ 2,120</span><span><button class="tiny ghost-btn" onclick="window.location.href = 'dashboarderror.html'">Review</button></span></div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: WISHLIST ═══════════════════════ -->
-    <section class="view" data-panel="wish">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 03</p><h1>Your wishlist</h1><p class="page-sub">Pieces you've bookmarked. Move them to your cart when you're ready.</p></div>
-        <div class="wish-total"><span>8 pieces</span><b>₹ 18,240</b><small>total value</small></div>
-      </div>
-
-      <div class="wish-grid">
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#9c3a2b,#c47a52)"></div><div class="wg-body"><p class="wg-name">Kalamkari wall scroll</p><small>Srikalahasti · natural dye</small><div class="wg-foot"><b>₹ 3,200</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#1f3d2a,#4a5d3f)"></div><div class="wg-body"><p class="wg-name">Channapatna spinning top</p><small>Karnataka · lacquered</small><div class="wg-foot"><b>₹ 690</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#d9a441,#b3663e)"></div><div class="wg-body"><p class="wg-name">Brass diya — Nachiarkoil</p><small>Tamil Nadu · hand cast</small><div class="wg-foot"><b>₹ 1,450</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#4a6fa5,#1e3a5f)"></div><div class="wg-body"><p class="wg-name">Indigo bandhani dupatta</p><small>Kutch · 1200 knots</small><div class="wg-foot"><b>₹ 4,200</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#8f5a2c,#5b3a1e)"></div><div class="wg-body"><p class="wg-name">Sheesham carving tray</p><small>Saharanpur · rosewood</small><div class="wg-foot"><b>₹ 2,800</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#c9a26b,#8a6e4b)"></div><div class="wg-body"><p class="wg-name">Assam bamboo lamp</p><small>Sualkuchi · woven shade</small><div class="wg-foot"><b>₹ 1,680</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#6b8a5b,#3d4b34)"></div><div class="wg-body"><p class="wg-name">Khadi handloom throw</p><small>Ponduru · handspun</small><div class="wg-foot"><b>₹ 2,450</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-        <div class="wg-card"><div class="wg-img" style="background:linear-gradient(135deg,#c94a3a,#8a4a2b)"></div><div class="wg-body"><p class="wg-name">Warli painted planter</p><small>Palghar · terracotta</small><div class="wg-foot"><b>₹ 1,350</b><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Move ↗</button></div></div></div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: CRAFT MAP ═══════════════════════ -->
-    <section class="view" data-panel="map">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 04</p><h1>Craft map of India</h1><p class="page-sub">7 villages · 12 artisans · 28 pieces travelled home to you.</p></div>
-      </div>
-
-      <div class="map-split">
-        <div class="map-big">
-          <svg viewBox="0 0 200 220"><path d="M100 10 C60 40 40 80 45 130 C50 180 90 210 110 205 C150 200 170 150 165 100 C160 55 140 20 100 10 Z" fill="none" stroke="#b3663e" stroke-width="1.2" stroke-dasharray="3 4"/></svg>
-          <span class="mpin" style="top:20%;left:24%">Kachchh<b>4</b></span>
-          <span class="mpin" style="top:34%;left:40%">Molela<b>3</b></span>
-          <span class="mpin" style="top:38%;left:64%">Pochampally<b>2</b></span>
-          <span class="mpin" style="top:52%;left:56%">Bidar<b>5</b></span>
-          <span class="mpin" style="top:65%;left:38%">Channapatna<b>6</b></span>
-          <span class="mpin" style="top:70%;left:60%">Srikalahasti<b>3</b></span>
-          <span class="mpin" style="top:28%;left:78%">Sualkuchi<b>2</b></span>
-        </div>
-        <div class="map-list">
-          <h3>Villages you've supported</h3>
-          <div class="vill"><span class="vsw" style="background:#4a6fa5"></span><div><b>Kachchh, Gujarat</b><small>Ajrakh block printing · indigo</small></div><em>4 orders</em></div>
-          <div class="vill"><span class="vsw" style="background:#b3663e"></span><div><b>Molela, Rajasthan</b><small>Terracotta relief tiles</small></div><em>3 orders</em></div>
-          <div class="vill"><span class="vsw" style="background:#c9a26b"></span><div><b>Pochampally, Telangana</b><small>Silk ikat weaving</small></div><em>2 orders</em></div>
-          <div class="vill"><span class="vsw" style="background:#5b3a1e"></span><div><b>Bidar, Karnataka</b><small>Bidri silver inlay</small></div><em>5 orders</em></div>
-          <div class="vill"><span class="vsw" style="background:#c94a3a"></span><div><b>Channapatna</b><small>Lacquered wood toys</small></div><em>6 orders</em></div>
-          <div class="vill"><span class="vsw" style="background:#8f5a2c"></span><div><b>Srikalahasti</b><small>Kalamkari painting</small></div><em>3 orders</em></div>
-          <div class="vill"><span class="vsw" style="background:#6b8a5b"></span><div><b>Sualkuchi, Assam</b><small>Bamboo & muga silk</small></div><em>2 orders</em></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: MESSAGES ═══════════════════════ -->
-    <section class="view" data-panel="msgs">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 05</p><h1>Messages from your makers</h1><p class="page-sub">Direct notes from the hands that made your pieces.</p></div>
-      </div>
-
-      <div class="chat-split">
-        <div class="thread-list">
-          <div class="thread active"><div class="tv" style="background:#c47a52">N</div><div><b>Nathulal Ji</b><small>"Your jug fired well…"</small></div><em>2h</em></div>
-          <div class="thread"><div class="tv" style="background:#4a5d3f">S</div><div><b>Sufiyan Khatri</b><small>"Indigo vat was ready…"</small></div><em>1d</em></div>
-          <div class="thread"><div class="tv" style="background:#8a6e4b">R</div><div><b>Rasheed Bhai</b><small>"Silver inlay complete"</small></div><em>2d</em></div>
-          <div class="thread"><div class="tv" style="background:#4a6fa5">L</div><div><b>Lakshmi Devi</b><small>"Loom ready for the next…"</small></div><em>5d</em></div>
-          <div class="thread"><div class="tv" style="background:#6b8a5b">M</div><div><b>Machunga</b><small>"Kiln firing tomorrow"</small></div><em>1w</em></div>
-        </div>
-
-        <div class="thread-open">
-          <div class="thread-head"><div class="tv big" style="background:#c47a52">N</div><div><b>Nathulal Ji</b><small>Molela · potter · 34 years at the wheel</small></div><a class="ghost">View maker →</a></div>
-          <div class="chat-log">
-            <div class="cb in"><p>Namaste Ananya ji. Your jug fired well in the second kiln. Sending a small clay bell as thanks 🙏</p><small>Nathulal · 10:20</small></div>
-            <div class="cb out"><p>Thank you so much! Excited to see it. When does it ship?</p><small>You · 10:31</small></div>
-            <div class="cb in"><p>Tomorrow morning by the Rajasthan Roadways parcel service. Should reach in 4 days.</p><small>Nathulal · 10:34</small></div>
-            <div class="cb in"><p>I've also added a note about the clay — please let it dry 24 hours before use.</p><small>Nathulal · 10:35</small></div>
-          </div>
-          <div class="chat-compose"><input placeholder="Write to Nathulal Ji…"/><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Send</button></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: IMPACT ═══════════════════════ -->
-    <section class="view" data-panel="impact">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 06</p><h1>Your impact story</h1><p class="page-sub">What your purchases meant to the workshops on the other side.</p></div>
-      </div>
-
-      <div class="impact-grid">
-        <div class="imp-big">
-          <p class="imp-num">₹ 34,120</p>
-          <p class="imp-lbl">paid <b>directly</b> to makers this year</p>
-          <div class="imp-bar"><span style="width:78%"></span></div>
-          <small>78% of your total spend reached the artisan (industry avg: 12%)</small>
-        </div>
-        <div class="imp-card"><span class="ic-num">12</span><span class="ic-lbl">artisans supported</span></div>
-        <div class="imp-card"><span class="ic-num">7</span><span class="ic-lbl">craft villages</span></div>
-        <div class="imp-card"><span class="ic-num">28</span><span class="ic-lbl">pieces commissioned</span></div>
-        <div class="imp-card dark"><span class="ic-num">142</span><span class="ic-lbl">days of workshop income funded</span></div>
-
-        <div class="imp-story">
-          <h3>Stories powered by you</h3>
-          <div class="istory"><span class="dot-g"></span><div><b>Nathulal Ji</b> bought a new potter's wheel<small>funded by 6 of your orders · Aug 2025</small></div></div>
-          <div class="istory"><span class="dot-g"></span><div><b>Sufiyan Khatri</b> trained his son in Ajrakh<small>your indigo orders subsidised the year</small></div></div>
-          <div class="istory"><span class="dot-g"></span><div><b>Bhagyamma</b> reopened her lacquer workshop<small>after your 6-piece toy commission</small></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: WALLET ═══════════════════════ -->
-    <section class="view" data-panel="wallet">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 07</p><h1>Stackly wallet</h1><p class="page-sub">Credits earned by supporting artisans. Spend on any piece, any time.</p></div>
-      </div>
-
-      <div class="wallet-hero">
-        <div class="wcard-big">
-          <div class="wc-top"><span>Stackly° credits</span><b>Silver tier</b></div>
-          <p class="wc-bal">₹ 2,480<em>.00</em></p>
-          <div class="wc-bar"><span style="width:62%"></span></div>
-          <small>Earn ₹ 1,520 more to unlock <b>Gold</b> — free shipping on all orders.</small>
-          <div class="wc-actions"><button class="tiny" onclick="window.location.href = 'dashboarderror.html'">＋ Add credits</button><button class="tiny ghost-btn" onclick="window.location.href = 'dashboarderror.html'">Redeem</button></div>
-        </div>
-        <div class="wc-tiers">
-          <div class="tier"><b>Bronze</b><small>₹ 0 – 999</small><span>5% back</span></div>
-          <div class="tier on"><b>Silver</b><small>₹ 1,000 – 3,999</small><span>8% back</span></div>
-          <div class="tier"><b>Gold</b><small>₹ 4,000+</small><span>12% + free ship</span></div>
-        </div>
-      </div>
-
-      <div class="txn-list">
-        <h3>Recent activity</h3>
-        <div class="txn"><span class="txn-i up">＋</span><div><b>Credits earned</b><small>on order #KG-2807</small></div><span class="txn-amt up">+ ₹ 308</span></div>
-        <div class="txn"><span class="txn-i dn">−</span><div><b>Redeemed on cart</b><small>Longpi bowl · 12 Jul</small></div><span class="txn-amt dn">− ₹ 200</span></div>
-        <div class="txn"><span class="txn-i up">＋</span><div><b>Referral bonus</b><small>Riya joined via your link</small></div><span class="txn-amt up">+ ₹ 500</span></div>
-        <div class="txn"><span class="txn-i up">＋</span><div><b>Credits earned</b><small>on order #KG-2799</small></div><span class="txn-amt up">+ ₹ 378</span></div>
-        <div class="txn"><span class="txn-i dn">−</span><div><b>Redeemed on cart</b><small>Warli planter · 28 Jun</small></div><span class="txn-amt dn">− ₹ 150</span></div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ VIEW: SETTINGS ═══════════════════════ -->
-    <section class="view" data-panel="settings">
-      <div class="page-head">
-        <div><p class="eyebrow">Module · 08</p><h1>Settings</h1><p class="page-sub">Tune your Stackly experience.</p></div>
-      </div>
-
-      <div class="settings-grid">
-        <div class="s-card">
-          <h3>Profile</h3>
-          <label>Full name<input value="Ananya Rao"/></label>
-          <label>Email<input value="ananya@Stackly.example"/></label>
-          <label>City<input value="Bengaluru"/></label>
-          <button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Save profile</button>
-        </div>
-
-        <div class="s-card">
-          <h3>Delivery address</h3>
-          <label>Street<input value="12, Wind Chime Road"/></label>
-          <label>Area / PIN<input value="Indiranagar · 560038"/></label>
-          <button class="tiny" onclick="window.location.href = 'dashboarderror.html'">Update address</button>
-        </div>
-
-        <div class="s-card">
-          <h3>Preferences</h3>
-          <div class="toggle"><span>Email updates from makers</span><i class="sw on"></i></div>
-          <div class="toggle"><span>SMS shipping alerts</span><i class="sw on"></i></div>
-          <div class="toggle"><span>Weekly craft-story digest</span><i class="sw"></i></div>
-          <div class="toggle"><span>New arrivals from favourites</span><i class="sw on"></i></div>
-        </div>
-
-        <div class="s-card danger">
-          <h3>Account</h3>
-          <p class="s-note">Log out of this browser or permanently delete your account.</p>
-          <div class="s-actions"><button class="tiny danger-btn" onclick="window.location.href = 'dashboarderror.html'">Delete account</button></div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="foot">
-      <span>Stackly° buyer console</span>
-      <span>v 2.4 — handwoven interface</span>
-      <span>© 2026</span>
-    </footer>
-  </main>
-</div>
-
-<div id="toast" class="toast"></div>
-<script src="js/user.js"></script>
-
-<div class="sidebar-overlay" id="sidebarOverlay"></div>
-</body>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  </body>
 </html>
