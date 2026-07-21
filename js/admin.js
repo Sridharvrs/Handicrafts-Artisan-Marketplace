@@ -1,3 +1,33 @@
+const currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+
+if(currentUser){
+
+    let name = currentUser.email.split("@")[0];
+
+    // Remove numbers and special characters
+    name = name.replace(/[0-9._-]/g," ");
+    name = name.replace(/\s+/g," ").trim();
+
+    // Format name
+    const formattedName = name
+        .split(" ")
+        .map(word =>
+            word.charAt(0).toUpperCase() +
+            word.slice(1).toLowerCase()
+        )
+        .join(" ");
+
+    // Show name
+    document.querySelectorAll(".user-name").forEach(el=>{
+        el.textContent = formattedName;
+    });
+
+    // Show first letter in avatar
+    document.getElementById("userAvatar").textContent =
+        formattedName.charAt(0).toUpperCase();
+
+}
+
 // Artisan Dashboard — module switcher + interactions
 const toast = document.getElementById('toast');
 function showToast(msg){

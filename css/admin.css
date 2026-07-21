@@ -520,6 +520,10 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
         width:145px;
     }
 
+    .aview{
+      padding-top: 100px;
+    }
+
 }
 
 /* ==================== */

@@ -27,6 +27,10 @@ if (currentUser) {
         el.textContent = email;
     });
 
+    // Show first letter in avatar
+    document.getElementById("userAvatar").textContent =
+        formattedName.charAt(0).toUpperCase();
+
 }
 
 // Buyer Dashboard — module switcher + interactions
