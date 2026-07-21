@@ -501,7 +501,7 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
 
     z-index:1000;
 
-    background:rgba(251,246,234,.95);
+    background:rgba(175, 169, 154, 0.95);
 
     backdrop-filter:blur(18px);
 
@@ -928,7 +928,9 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
 
         flex:1;
 
-        min-width:0;
+        /* min-width:0; */
+
+        width: 20px;
 
     }
 
