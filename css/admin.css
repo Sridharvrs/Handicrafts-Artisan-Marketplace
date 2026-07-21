@@ -717,7 +717,7 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
 @media (max-width:576px){
 
     .topbar{
-        padding:0 12px 0 62px;
+        padding:0 12px 0 22px;
     }
 
     .search-box{
@@ -738,7 +738,6 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
 
     .top-right{
         gap:6px;
-        padding-top: 10px;
     }
 
     .icon-btn{
