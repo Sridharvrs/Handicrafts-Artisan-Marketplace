@@ -1,122 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Stackly | Sign Up</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="css/signup.css">
-</head>
-<body>
-<section class="signup-page">
-<div class="left">
-<span class="eyebrow">JOIN Stackly</span>
-<h1>Create your <em>creative</em> account.</h1>
-<p>Become part of a community that celebrates handmade craftsmanship.</p>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Stackly | Sign Up</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <a href="index.html" class="close-page">
+      <i class="fa-solid fa-xmark"></i>
+    </a>
+    <section class="signup-page">
+      <div class="left">
+        <span class="eyebrow">JOIN Stackly</span>
+        <h1>Create your <em>creative</em> account.</h1>
+        <p>
+          Become part of a community that celebrates handmade craftsmanship.
+        </p>
+      </div>
 
-<div class="right">
-<form id="signupForm" class="card">
+      <div class="right">
+        <form id="signupForm" class="card">
+          <div class="progress">
+            <div class="progress-bar"></div>
+          </div>
 
-<div class="progress">
-<div class="progress-bar"></div>
-</div>
+          <div class="steps">
+            <div class="step active">1. Personal</div>
+            <div class="step">2. Security</div>
+          </div>
 
-<div class="steps">
-<div class="step active">1. Personal</div>
-<div class="step">2. Security</div>
-</div>
+          <div id="step1" class="form-step active">
+            <div class="grid">
+              <div class="field">
+                <label>First Name</label>
+                <input id="firstName" type="text" />
+              </div>
 
-<div id="step1" class="form-step active">
+              <div class="field">
+                <label>Last Name</label>
+                <input id="lastName" type="text" />
+              </div>
+            </div>
 
-<div class="grid">
-<div class="field">
-<label>First Name</label>
-<input id="firstName" type="text">
-</div>
+            <div class="field">
+              <label>Email</label>
+              <input id="email" type="email" />
+            </div>
 
-<div class="field">
-<label>Last Name</label>
-<input id="lastName" type="text">
-</div>
-</div>
+            <div class="field">
+              <label>Phone</label>
+              <input id="phone" maxlength="10" />
+            </div>
 
-<div class="field">
-<label>Email</label>
-<input id="email" type="email">
-</div>
+            <div class="roles">
+              <label class="role-card active">
+                <input type="radio" name="role" checked hidden />
+                <i class="fa-solid fa-user"></i>
+                <h4>Customer</h4>
+              </label>
 
-<div class="field">
-<label>Phone</label>
-<input id="phone" maxlength="10">
-</div>
+              <label class="role-card">
+                <input type="radio" name="role" hidden />
+                <i class="fa-solid fa-store"></i>
+                <h4>Artisan</h4>
+              </label>
+            </div>
 
-<div class="roles">
-<label class="role-card active">
-<input type="radio" name="role" checked hidden>
-<i class="fa-solid fa-user"></i>
-<h4>Customer</h4>
-</label>
+            <button type="button" id="nextBtn" class="btn">Continue</button>
+          </div>
 
-<label class="role-card">
-<input type="radio" name="role" hidden>
-<i class="fa-solid fa-store"></i>
-<h4>Artisan</h4>
-</label>
-</div>
+          <div id="step2" class="form-step">
+            <div class="field">
+              <label>Password</label>
+              <div class="pass">
+                <input id="password" type="password" />
+                <button id="togglePassword" type="button">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
 
-<button type="button" id="nextBtn" class="btn">Continue</button>
+            <div class="field">
+              <label>Confirm Password</label>
+              <div class="pass">
+                <input id="confirmPassword" type="password" />
+                <button id="toggleConfirm" type="button">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
 
-</div>
+            <div class="rules">
+              <p id="length" class="invalid">8 characters minimum</p>
+              <p id="upper" class="invalid">One uppercase letter</p>
+              <p id="lower" class="invalid">One lowercase letter</p>
+              <p id="number" class="invalid">One number</p>
+              <p id="symbol" class="invalid">One special character</p>
+              <p id="match" class="invalid">Passwords match</p>
+            </div>
 
-<div id="step2" class="form-step">
+            <label class="agree">
+              <input type="checkbox" id="agree" />
+              <span>I agree to the Terms & Conditions</span>
+            </label>
 
-<div class="field">
-<label>Password</label>
-<div class="pass">
-<input id="password" type="password">
-<button id="togglePassword" type="button"><i class="fa-solid fa-eye"></i></button>
-</div>
-</div>
+            <div class="actions">
+              <button type="button" class="back-btn">Back</button>
+              <button type="submit" class="btn">Create Account</button>
+            </div>
 
-<div class="field">
-<label>Confirm Password</label>
-<div class="pass">
-<input id="confirmPassword" type="password">
-<button id="toggleConfirm" type="button"><i class="fa-solid fa-eye"></i></button>
-</div>
-</div>
+            <div id="message" class="message"></div>
 
-<div class="rules">
-<p id="length" class="invalid">8 characters minimum</p>
-<p id="upper" class="invalid">One uppercase letter</p>
-<p id="lower" class="invalid">One lowercase letter</p>
-<p id="number" class="invalid">One number</p>
-<p id="symbol" class="invalid">One special character</p>
-<p id="match" class="invalid">Passwords match</p>
-</div>
-
-<label class="agree">
-<input type="checkbox" id="agree">
-<span>I agree to the Terms & Conditions</span>
-</label>
-
-<div class="actions">
-<button type="button" class="back-btn">Back</button>
-<button type="submit" class="btn">Create Account</button>
-</div>
-
-<div id="message" class="message"></div>
-
-<p class="login-link">Already have an account?
-<a href="login.html">Login →</a></p>
-
-</div>
-
-</form>
-</div>
-</section>
-<script src="js/signup.js"></script>
-</body>
+            <p class="login-link">
+              Already have an account? <a href="login.html">Login →</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="js/signup.js"></script>
+  </body>
 </html>

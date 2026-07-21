@@ -25,3 +25,73 @@ body{font-family:Inter;background:var(--cream)}
 .login-link{text-align:center;margin-top:20px}
 .login-link a{text-decoration:none;color:var(--terracotta);font-weight:600}
 @media(max-width:992px){.signup-page{grid-template-columns:1fr}.left{display:none}.grid,.roles{grid-template-columns:1fr}}
+
+/*==========================================
+            CLOSE BUTTON
+==========================================*/
+
+.close-page{
+
+    position:fixed;
+
+    top:24px;
+    right:24px;
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:var(--ink);
+
+    text-decoration:none;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.close-page i{
+
+    font-size:20px;
+
+}
+
+.close-page:hover{
+
+    background:var(--terracotta);
+
+    color:#fff;
+
+    transform:rotate(90deg);
+
+}
+
+@media (max-width:768px){
+
+    .close-page{
+
+        width:46px;
+        height:46px;
+
+        top:16px;
+        right:16px;
+
+    }
+
+    .close-page i{
+
+        font-size:18px;
+
+    }
+
+}

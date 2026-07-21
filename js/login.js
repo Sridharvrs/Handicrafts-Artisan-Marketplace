@@ -1,4 +1,23 @@
 /*==================================================
+                CURRENT USER
+==================================================*/
+
+const currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+
+if (currentUser) {
+
+    const formattedName =
+        currentUser.name.charAt(0).toUpperCase() +
+        currentUser.name.slice(1);
+
+    const profileName = document.getElementById("profileName");
+
+    if (profileName) {
+        profileName.textContent = formattedName;
+    }
+}
+
+/*==================================================
                 ELEMENTS
 ==================================================*/
 

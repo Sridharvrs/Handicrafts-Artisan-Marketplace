@@ -1,3 +1,34 @@
+const currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+
+if (currentUser) {
+
+    const email = currentUser.email;
+
+    // Extract username from email
+    let name = email.split("@")[0];
+
+    // Remove numbers and special characters
+    name = name.replace(/[0-9._-]/g, " ");
+
+    // Remove extra spaces
+    name = name.replace(/\s+/g, " ").trim();
+
+    // Capitalize each word
+    const formattedName = name
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(" ");
+
+    document.querySelectorAll(".user-name").forEach(el => {
+        el.textContent = formattedName;
+    });
+
+    document.querySelectorAll(".user-email").forEach(el => {
+        el.textContent = email;
+    });
+
+}
+
 // Buyer Dashboard — module switcher + interactions
 const toast = document.getElementById('toast');
 function showToast(msg){
@@ -178,3 +209,17 @@ document.querySelectorAll(".bnav a").forEach(link => {
         }
     });
 });
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+
+    logoutBtn.addEventListener("click", () => {
+
+        sessionStorage.removeItem("currentUser");
+
+        window.location.href = "login.html";
+
+    });
+
+}
